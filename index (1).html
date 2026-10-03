@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gloria Christophera Kusuma — Portfolio</title>
+<meta name="description" content="Finance student at Universitas Bina Nusantara. Equity research and valuation case competitions, lab assistant, student organization experience.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%230b1f4d%22/><text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23c8ad72%22 font-family=%22serif%22>G</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#06122b;--navy:#0b1f4d;--cob:#2456e6;--sky:#7fb2ff;--ice:#eaf1ff;--paper:#f6f9ff;--gold:#c8ad72;--mut:#51607f;--ln:#c9d7f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:16px/1.65 'DM Sans',sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
+a{color:inherit}.w{max-width:1100px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:30;background:var(--navy);border-bottom:1px solid rgba(200,173,114,.4)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:52px}
+nav b{font:600 20px 'Cormorant Garamond',serif;letter-spacing:.08em;color:#fff}
+nav div{display:flex;gap:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;overflow-x:auto;white-space:nowrap}
+nav a{color:#c7d6f5;text-decoration:none}nav a:hover{color:var(--gold)}
+.hero{color:#fff;padding:64px 0 56px;background:radial-gradient(55% 90% at 85% 0%,rgba(36,86,230,.7),transparent 70%),radial-gradient(40% 60% at 5% 100%,rgba(127,178,255,.22),transparent 70%),linear-gradient(160deg,#06122b,#0b1f4d 70%,#12306f)}
+.hd{display:flex;gap:28px;align-items:center}
+.av{flex:none;width:104px;height:104px;border-radius:50%;border:2px solid var(--gold);padding:4px}
+.ph{position:relative;display:grid;place-items:center;text-align:center;font-size:11px;color:var(--mut);background:var(--ice);overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.av .ph{width:100%;height:100%;border-radius:50%;background:rgba(255,255,255,.1);color:#a9c3f5;line-height:1.2}
+.hero h1{font-size:clamp(38px,5.5vw,62px)}.sub{color:var(--gold);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px}
+.sum{max-width:720px;color:#c7d6f5;margin:28px 0 0}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{font:700 12px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:11px 20px;border:1px solid rgba(255,255,255,.5);color:#fff;background:none;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--gold)}.btn.g{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.sec{padding:76px 0;border-bottom:1px solid var(--ln)}.sec.alt{background:linear-gradient(180deg,var(--ice),var(--paper))}
+.sec .w{display:grid;grid-template-columns:230px 1fr;gap:48px}
+h2{font-size:38px;position:sticky;top:76px;align-self:start}h2:after{content:"";display:block;width:36px;height:2px;background:var(--gold);margin-top:14px}
+.it{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--ln)}.it:first-child{border-top:0;padding-top:0}
+.dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--cob);padding-top:5px}
+.it h3{font-size:26px}.meta{font-size:14px;color:var(--mut);margin-top:4px}
+ul{margin:10px 0 0;padding:0;list-style:none}li{position:relative;padding:3px 0 3px 20px;color:#34415f;font-size:15px}li:before{content:"–";position:absolute;left:0;color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.chip{border:1px solid #9db6ee;color:var(--navy);font-size:12px;padding:3px 12px;border-radius:99px;background:rgba(255,255,255,.65)}
+.lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-top:14px}
+.ov{display:grid;grid-template-columns:1fr 1fr;gap:28px}.ov dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cob);font-weight:700}.ov dd{margin:2px 0 16px}
+.ts{display:grid;grid-template-columns:1fr 210px;gap:28px;align-items:start}
+.fr{position:relative;aspect-ratio:4/3}.fr:before{content:"";position:absolute;inset:10px -10px -10px 10px;border:1px solid var(--cob);transition:.35s}.fr:hover:before{inset:0}
+.fr .ph{position:absolute;inset:0;box-shadow:0 14px 30px rgba(11,31,77,.18)}
+.cp{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:30px 20px;border-top:1px solid var(--ln);transition:.3s;border-left:3px solid transparent}
+.cp:last-child{border-bottom:1px solid var(--ln)}.cp:hover{background:#fff;border-left-color:var(--gold);box-shadow:0 10px 30px rgba(11,31,77,.08)}
+.rk{font:700 64px/.9 'Cormorant Garamond',serif;color:var(--cob)}.rk small{display:block;font:700 11px 'DM Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}.rk sup{font-size:22px}
+.cp h3{font-size:27px}.act{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.bt{font:700 11px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:9px 18px;background:var(--navy);color:#fff;transition:.25s;border:1px solid var(--navy)}
+.bt.o{background:none;color:var(--navy)}.bt:hover{background:var(--cob);border-color:var(--cob);color:#fff;transform:translateY(-2px)}
+.miss{display:none!important}
+.sh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cob);font-weight:700;margin:0 0 8px}.sh+div{margin-bottom:40px}
+.cr a{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--ln);text-decoration:none;transition:.25s}
+.cr a:last-child{border-bottom:1px solid var(--ln)}.cr a:hover{padding-left:14px;color:var(--cob)}.cr a.miss{display:flex!important;pointer-events:none}.cr a.miss i{display:none}
+.cr b{font:600 22px 'Cormorant Garamond',serif}.cr span{font-size:13px;color:var(--mut);display:block;font-weight:400}.cr i{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+footer{background:var(--navy);color:#a9bde6;padding:36px 0;font-size:13px}footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#fff;margin-left:20px;text-decoration:none;border-bottom:1px solid var(--gold)}
+#modal{position:fixed;inset:0;background:rgba(3,10,25,.9);display:none;z-index:60;padding:20px}#modal.on{display:flex;flex-direction:column}
+#modal .t{display:flex;justify-content:space-between;color:#fff;padding-bottom:12px;gap:12px;align-items:center}#modal iframe{flex:1;border:0;background:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.sec .w,.ts,.ov{grid-template-columns:1fr}.sec .w{gap:24px}h2{position:static}.it{grid-template-columns:1fr;gap:4px}.hd{flex-direction:column;align-items:flex-start}.cp{grid-template-columns:1fr;gap:10px}.ts .fr{max-width:260px}nav b{display:none}}
+</style></head><body>
+<nav><div class="w"><b>GCK</b><div><a href="#overview">Overview</a><a href="#organizations">Organizations</a><a href="#lab">Lab Assistant</a><a href="#competitions">Competitions</a><a href="#credentials">Credentials</a></div></div></nav>
+
+<header class="hero" id="overview"><div class="w">
+<div class="hd"><div class="av"><div class="ph" data-img="assets/photos/portrait.jpg">Add photo</div></div>
+<div><h1>Gloria Christophera Kusuma</h1><div class="sub">Finance · Universitas Bina Nusantara</div></div></div>
+<p class="sum">Finance student at Universitas Bina Nusantara (GPA 3.92) with experience in equity research and valuation case competitions, teaching accounting and audit software as a lab assistant, and finance and event roles in student organizations.</p>
+<div class="btns"><a class="btn g" href="assets/CV_Gloria_Christophera_Kusuma.pdf" target="_blank">Download CV</a><a class="btn" href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="mailto:gloria.kusuma@binus.ac.id">Email</a></div>
+<dl class="ov" style="margin:44px 0 0;color:#dbe7ff"><div><dt style="color:var(--gold)">Education</dt><dd>Universitas Bina Nusantara, Bachelor of Finance, 2024 – Present<br>SMA Zion Makassar, Natural Sciences, 2022 – 2024</dd></div>
+<div><dt style="color:var(--gold)">Tools & Language</dt><dd>MYOB, Odoo ERP, ACL<br>English (IELTS 7.5) · Based in Tangerang, Indonesia</dd></div></dl>
+</div></header>
+
+<section class="sec" id="organizations"><div class="w"><h2>Organizational Experience</h2><div class="rv" id="org"></div></div></section>
+<section class="sec alt" id="lab"><div class="w"><h2>Lab Assistant & Tutor</h2><div class="rv" id="teach"></div></div></section>
+<section class="sec" id="competitions"><div class="w"><h2>Competitions</h2><div class="rv" id="comps"></div></div></section>
+<section class="sec alt" id="credentials"><div class="w"><h2>Certificates & Credentials</h2><div class="rv cr"><p class="sh">Competition certificates</p><div id="certs"></div><p class="sh">Credentials</p><div id="creds"></div></div></div></section>
+
+<footer><div class="w"><span>© 2026 Gloria Christophera Kusuma · Tangerang, Indonesia</span><span><a href="mailto:gloria.kusuma@binus.ac.id">Email</a><a href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a href="assets/CV_Gloria_Christophera_Kusuma.pdf" target="_blank">CV</a></span></div></footer>
+
+<div id="modal"><div class="t"><b id="mt"></b><span><a id="mo" target="_blank" style="color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase">New tab ↗</a> &nbsp; <button class="btn" onclick="closeM()">Close ✕</button></span></div><iframe id="mf"></iframe></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const ul=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+const chips=a=>`<div class="chips">${a.map(x=>`<span class="chip">${x}</span>`).join("")}</div>`;
+
+const ORG=[
+{d:"Apr – Jun 2025",t:"Treasurer · TFI Waste to Wonder (WTW)",u:["Managed finances for an ecoenzyme workshop that reduces household organic waste","Prepared the budget, recorded income and expenses, and wrote the final financial report","Coordinated with the preparation team on tools and materials"]},
+{d:"Mar – Jun 2025",t:"Fundraising Division Coordinator · TFI RULES (Ruang Les)",u:["Coordinated fundraising for educational activities at Panti Asuhan Ibnu Sabil","Managed pre-order sales and ensured orders matched buyers' requirements"]},
+{d:"2026",t:"Committee · StockQuest BNFC 2026",u:["Staff of Registration","Banker, StockLab","Liaison Officer (LO), Trading and Equity Research teams"]},
+{d:"BNFC",t:"Vice Head of Event · Benchmarking BNFC"},
+{d:"BNFC",t:"Staff of Sponsorship · Finsight BNFC"}];
+$("#org").innerHTML=ORG.map(x=>`<div class="it"><div class="dt">${x.d}</div><div><h3>${x.t}</h3>${x.u?ul(x.u):""}</div></div>`).join("");
+
+const TEACH=[
+{d:"Sep 2025 – Jul 2026",t:"Accounting & Finance Laboratory Assistant",m:"Universitas Bina Nusantara",i:"aslab-accounting-finance.jpg",u:["Taught and mentored students in using MYOB and Odoo ERP for digital accounting","Supported lab projects on digitizing SME financial reports in West Jakarta","Trained students on transaction recording, financial statement preparation, and ERP integration"]},
+{d:"Lab Assistant",t:"Method & Practice of Computerized Audit",m:"Universitas Bina Nusantara",i:"aslab-audit-acl.jpg",u:["Taught students to use ACL audit software"]},
+{d:"Tutor",t:"Advanced Tax",m:"Universitas Bina Nusantara",i:"tutor-advanced-tax.jpg",u:["Tutored students on advanced taxation material"]}];
+$("#teach").innerHTML=TEACH.map(x=>`<div class="it"><div class="dt">${x.d}</div><div class="ts"><div><h3>${x.t}</h3><div class="meta">${x.m}</div>${ul(x.u)}</div><div class="fr"><div class="ph" data-img="assets/photos/${x.i}">Add photo<br>${x.i}</div></div></div></div>`).join("");
+
+const P="assets/reports/",C="assets/certificates/";
+const COMPS=[
+{rk:"<small>Top</small>4",t:"Finance For Indonesia Competition (FFIC) 2026",m:"Finance For Indonesia (FFI) · September 2026",r:["Company profile","Strategic fit","Synergy","Risk"],rep:P+"ffic-report.pdf",deck:P+"ffic-pitch-deck.pdf",c:C+"ffic.pdf",cb:"Top 4 Finalist"},
+{rk:"<small>Top</small>9",t:"International Investment Banking Competition (IIBC) 2026",m:"Universitas Prasetiya Mulya · April 2026",r:["Valuation","Deal structure","Synergy"],rep:P+"iibc-report.pdf",deck:P+"iibc-pitch-deck.pdf",c:C+"iibc.pdf",cb:"Top 9 Finalist"},
+{rk:"<small>Winner</small>3<sup>rd</sup>",t:"Stock Valuation Competition 2026",m:"Universitas Pelita Harapan · June 2026 · Team Investment Network",n:"Equity research on GGRM.IJ: Sell, target price Rp10,129",r:["Company profile","Macro analysis"],rep:P+"uph-ggrm-equity-research-paper.pdf",deck:P+"uph-ggrm-final-round-deck.pdf",c:C+"uph.pdf",cb:"3rd Winner"},
+{rk:"<small>Winner</small>2<sup>nd</sup>",t:"National Business Plan Competition, Marketing Days 2025",m:"Trisakti School of Management · September 2025",r:["Risk","Financial projection"],rep:P+"nbpc-report.pdf",deck:P+"nbpc-pitch-deck.pdf",c:C+"nbpc.pdf",cb:"2nd Winner"},
+{rk:"<small>Winner</small>3<sup>rd</sup>",t:"Accounting Case Competition BNAT XIV",m:"HIMA Universitas Bina Nusantara · October 2025",r:["Team leader"],rep:P+"bnat-report.pdf",deck:P+"bnat-pitch-deck.pdf",c:C+"bnat.pdf",cb:"3rd Winner"}];
+const B=(f,l,t,o)=>`<a class="bt${o?" o":""}" href="${f}" data-f="${f}" data-t="${t} · ${l}" onclick="return openM(this)">${l}</a>`;
+$("#comps").innerHTML=COMPS.map(x=>`<article class="cp"><div class="rk">${x.rk}</div><div><h3>${x.t}</h3><div class="meta">${x.m}</div>${x.n?`<div class="meta" style="color:var(--ink)">${x.n}</div>`:""}<div class="lab">My role</div>${chips(x.r)}<div class="act">${B(x.deck,"Pitch deck",x.t)}${B(x.rep,"Report",x.t,1)}</div></div></article>`).join("");
+
+const CA=(f,t,s,l)=>`<a href="${f}" data-f="${f}" target="_blank" rel="noopener"><b>${t}<span>${s}</span></b><i>${l}</i></a>`;
+$("#certs").innerHTML=COMPS.map(x=>CA(x.c,x.t,x.cb+" · "+x.m.split(" · ").slice(0,2).join(" · "),"View ↗")).join("");
+$("#creds").innerHTML=CA(C+"ielts.pdf","IELTS","English proficiency · Score 7.5","View ↗")+CA("assets/transcript.pdf","Academic Transcript","Universitas Bina Nusantara · Finance · GPA 3.92","View ↗");
+
+function openM(a){const f=a.getAttribute("href");$("#mt").textContent=a.dataset.t||"";$("#mf").src=f;$("#mo").href=f;$("#modal").classList.add("on");return false}
+function closeM(){$("#modal").classList.remove("on");$("#mf").src=""}
+addEventListener("keydown",e=>e.key=="Escape"&&closeM());
+document.querySelectorAll("[data-img]").forEach(p=>{const i=new Image();i.onload=()=>{p.textContent="";p.appendChild(i)};i.src=p.dataset.img;i.alt=""});
+if(/^https?:/.test(location.protocol))document.querySelectorAll("[data-f]").forEach(a=>fetch(a.dataset.f,{method:"HEAD"}).then(r=>{if(!r.ok)throw 0}).catch(()=>a.classList.add("miss")));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.05});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+</script></body></html>
