@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gloria Christophera Kusuma — Portfolio</title>
+<meta name="description" content="Finance student at Universitas Bina Nusantara. Equity research and valuation case competitions, lab assistant, student organization experience.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%230b1f4d%22/><text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23c8ad72%22 font-family=%22serif%22>G</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#06122b;--navy:#0b1f4d;--cob:#2456e6;--sky:#7fb2ff;--ice:#eaf1ff;--paper:#f6f9ff;--gold:#c8ad72;--mut:#51607f;--ln:#c9d7f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:16px/1.65 'DM Sans',sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
+a{color:inherit}.w{max-width:1100px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:30;background:var(--navy);border-bottom:1px solid rgba(200,173,114,.4)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:52px}
+nav b{font:600 20px 'Cormorant Garamond',serif;letter-spacing:.08em;color:#fff}
+nav div{display:flex;gap:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;overflow-x:auto;white-space:nowrap}
+nav a{color:#c7d6f5;text-decoration:none}nav a:hover{color:var(--gold)}
+.hero{color:#fff;padding:64px 0 56px;background:radial-gradient(55% 90% at 85% 0%,rgba(36,86,230,.7),transparent 70%),radial-gradient(40% 60% at 5% 100%,rgba(127,178,255,.22),transparent 70%),linear-gradient(160deg,#06122b,#0b1f4d 70%,#12306f)}
+.hd{display:flex;gap:28px;align-items:center}
+.av{flex:none;width:104px;height:104px;border-radius:50%;border:2px solid var(--gold);padding:4px}
+.ph{position:relative;display:grid;place-items:center;text-align:center;font-size:11px;color:var(--mut);background:var(--ice);overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.av .ph{width:100%;height:100%;border-radius:50%;background:rgba(255,255,255,.1);color:#a9c3f5;line-height:1.2}
+.hero h1{font-size:clamp(38px,5.5vw,62px)}.sub{color:var(--gold);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px}
+.sum{max-width:720px;color:#c7d6f5;margin:28px 0 0}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{font:700 12px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:11px 20px;border:1px solid rgba(255,255,255,.5);color:#fff;background:none;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--gold)}.btn.g{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.sec{padding:76px 0;border-bottom:1px solid var(--ln)}.sec.alt{background:linear-gradient(180deg,var(--ice),var(--paper))}
+.sec .w{display:grid;grid-template-columns:230px 1fr;gap:48px}
+h2{font-size:38px;position:sticky;top:76px;align-self:start}h2:after{content:"";display:block;width:36px;height:2px;background:var(--gold);margin-top:14px}
+.it{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--ln)}.it:first-child{border-top:0;padding-top:0}
+.dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--cob);padding-top:5px}
+.it h3{font-size:26px}.meta{font-size:14px;color:var(--mut);margin-top:4px}
+ul{margin:10px 0 0;padding:0;list-style:none}li{position:relative;padding:3px 0 3px 20px;color:#34415f;font-size:15px}li:before{content:"–";position:absolute;left:0;color:var(--gold);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.chip{border:1px solid #9db6ee;color:var(--navy);font-size:12px;padding:3px 12px;border-radius:99px;background:rgba(255,255,255,.65)}
+.lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-top:14px}
+.ov{display:grid;grid-template-columns:1fr 1fr;gap:28px}.ov dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cob);font-weight:700}.ov dd{margin:2px 0 16px}
+.ts{display:grid;grid-template-columns:1fr 210px;gap:28px;align-items:start}
+.fr{position:relative;aspect-ratio:4/3}.fr:before{content:"";position:absolute;inset:10px -10px -10px 10px;border:1px solid var(--cob);transition:.35s}.fr:hover:before{inset:0}
+.fr .ph{position:absolute;inset:0;box-shadow:0 14px 30px rgba(11,31,77,.18)}
+.cp{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:30px 20px;border-top:1px solid var(--ln);transition:.3s;border-left:3px solid transparent}
+.cp:last-child{border-bottom:1px solid var(--ln)}.cp:hover{background:#fff;border-left-color:var(--gold);box-shadow:0 10px 30px rgba(11,31,77,.08)}
+.rk{font:700 64px/.9 'Cormorant Garamond',serif;color:var(--cob)}.rk small{display:block;font:700 11px 'DM Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}.rk sup{font-size:22px}
+.cp h3{font-size:27px}.act{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.bt{font:700 11px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:9px 18px;background:var(--navy);color:#fff;transition:.25s;border:1px solid var(--navy)}
+.bt.o{background:none;color:var(--navy)}.bt:hover{background:var(--cob);border-color:var(--cob);color:#fff;transform:translateY(-2px)}
+.miss{display:none!important}
+.sh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cob);font-weight:700;margin:0 0 8px}.sh+div{margin-bottom:40px}
+.cr a{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--ln);text-decoration:none;transition:.25s}
+.cr a:last-child{border-bottom:1px solid var(--ln)}.cr a:hover{padding-left:14px;color:var(--cob)}.cr a.miss{display:flex!important;pointer-events:none}.cr a.miss i{display:none}
+.cr b{font:600 22px 'Cormorant Garamond',serif}.cr span{font-size:13px;color:var(--mut);display:block;font-weight:400}.cr i{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+footer{background:var(--navy);color:#a9bde6;padding:36px 0;font-size:13px}footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#fff;margin-left:20px;text-decoration:none;border-bottom:1px solid var(--gold)}
+#modal{position:fixed;inset:0;background:rgba(3,10,25,.9);display:none;z-index:60;padding:20px}#modal.on{display:flex;flex-direction:column}
+#modal .t{display:flex;justify-content:space-between;color:#fff;padding-bottom:12px;gap:12px;align-items:center}#modal iframe{flex:1;border:0;background:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.sec .w,.ts,.ov{grid-template-columns:1fr}.sec .w{gap:24px}h2{position:static}.it{grid-template-columns:1fr;gap:4px}.hd{flex-direction:column;align-items:flex-start}.cp{grid-template-columns:1fr;gap:10px}.ts .fr{max-width:260px}nav b{display:none}}
+</style></head><body>
+<nav><div class="w"><b>GCK</b><div><a href="#overview">Overview</a><a href="#organizations">Organizations</a><a href="#lab">Lab Assistant</a><a href="#competitions">Competitions</a><a href="#credentials">Credentials</a></div></div></nav>
+
+<!-- ============ 1. OVERVIEW ============ -->
+<header class="hero" id="overview"><div class="w">
+<div class="hd">
+<!-- Profile photo: upload files/portrait.jpg -->
+<div class="av"><div class="ph"><img src="files/portrait.jpg" alt="" onerror="this.remove()">Add photo</div></div>
+<div><h1>Gloria Christophera Kusuma</h1><div class="sub">Finance · Universitas Bina Nusantara</div></div></div>
+<p class="sum">Finance student at Universitas Bina Nusantara (GPA 3.92) with experience in equity research and valuation case competitions, teaching accounting and audit software as a lab assistant, and finance and event roles in student organizations.</p>
+<div class="btns"><a class="btn g" href="files/cv.pdf" target="_blank">Download CV</a><a class="btn" href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="mailto:gloria.kusuma@binus.ac.id">Email</a></div>
+<dl class="ov" style="margin:44px 0 0;color:#dbe7ff"><div><dt style="color:var(--gold)">Education</dt><dd>Universitas Bina Nusantara, Bachelor of Finance, 2024 – Present<br>SMA Zion Makassar, Natural Sciences, 2022 – 2024</dd></div>
+<div><dt style="color:var(--gold)">Tools & Language</dt><dd>MYOB, Odoo ERP, ACL<br>English (IELTS 7.5) · Based in Tangerang, Indonesia</dd></div></dl>
+</div></header>
+
+<!-- ============ 2. ORGANIZATIONAL EXPERIENCE ============ -->
+<!-- To add an entry: copy one <div class="it">...</div> block and paste it below. -->
+<section class="sec" id="organizations"><div class="w"><h2>Organizational Experience</h2><div>
+
+<div class="it"><div class="dt">Apr – Jun 2025</div><div><h3>Treasurer · TFI Waste to Wonder (WTW)</h3><ul>
+<li>Managed finances for an ecoenzyme workshop that reduces household organic waste</li>
+<li>Prepared the budget, recorded income and expenses, and wrote the final financial report</li>
+<li>Coordinated with the preparation team on tools and materials</li></ul></div></div>
+
+<div class="it"><div class="dt">Mar – Jun 2025</div><div><h3>Fundraising Division Coordinator · TFI RULES (Ruang Les)</h3><ul>
+<li>Coordinated fundraising for educational activities at Panti Asuhan Ibnu Sabil</li>
+<li>Managed pre-order sales and ensured orders matched buyers' requirements</li></ul></div></div>
+
+<div class="it"><div class="dt">2026</div><div><h3>Committee · StockQuest BNFC 2026</h3><ul>
+<li>Staff of Registration</li><li>Banker, StockLab</li><li>Liaison Officer (LO), Trading and Equity Research teams</li></ul></div></div>
+
+<div class="it"><div class="dt">BNFC</div><div><h3>Vice Head of Event · Benchmarking BNFC</h3></div></div>
+
+<div class="it"><div class="dt">BNFC</div><div><h3>Staff of Sponsorship · Finsight BNFC</h3></div></div>
+
+</div></div></section>
+
+<!-- ============ 3. LAB ASSISTANT & TUTOR ============ -->
+<!-- Photo for each entry: upload the file named in the img src below into the files folder. -->
+<section class="sec alt" id="lab"><div class="w"><h2>Lab Assistant & Tutor</h2><div>
+
+<div class="it"><div class="dt">Sep 2025 – Jul 2026</div><div class="ts"><div><h3>Accounting & Finance Laboratory Assistant</h3><div class="meta">Universitas Bina Nusantara</div><ul>
+<li>Taught and mentored students in using MYOB and Odoo ERP for digital accounting</li>
+<li>Supported lab projects on digitizing SME financial reports in West Jakarta</li>
+<li>Trained students on transaction recording, financial statement preparation, and ERP integration</li></ul></div>
+<div class="fr"><div class="ph"><img src="files/aslab-accounting-finance.jpg" alt="" onerror="this.remove()">Add photo<br>aslab-accounting-finance.jpg</div></div></div></div>
+
+<div class="it"><div class="dt">Lab Assistant</div><div class="ts"><div><h3>Method & Practice of Computerized Audit</h3><div class="meta">Universitas Bina Nusantara</div><ul>
+<li>Taught students to use ACL audit software</li></ul></div>
+<div class="fr"><div class="ph"><img src="files/aslab-audit-acl.jpg" alt="" onerror="this.remove()">Add photo<br>aslab-audit-acl.jpg</div></div></div></div>
+
+<div class="it"><div class="dt">Tutor</div><div class="ts"><div><h3>Advanced Tax</h3><div class="meta">Universitas Bina Nusantara</div><ul>
+<li>Tutored students on advanced taxation material</li></ul></div>
+<div class="fr"><div class="ph"><img src="files/tutor-advanced-tax.jpg" alt="" onerror="this.remove()">Add photo<br>tutor-advanced-tax.jpg</div></div></div></div>
+
+</div></div></section>
+
+<!-- ============ 4. COMPETITIONS ============ -->
+<!-- Each competition is one <article> block. Delete a button if you have no file for it. -->
+<section class="sec" id="competitions"><div class="w"><h2>Competitions</h2><div>
+
+<!-- FFIC -->
+<article class="cp"><div class="rk"><small>Top</small>4</div><div>
+<h3>Finance For Indonesia Competition (FFIC) 2026</h3><div class="meta">Finance For Indonesia (FFI) · September 2026</div>
+<div class="lab">My role</div><div class="chips"><span class="chip">Company profile</span><span class="chip">Strategic fit</span><span class="chip">Synergy</span><span class="chip">Risk</span></div>
+<div class="act"><a class="bt" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="FFIC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/ffic-report.pdf" target="_blank" data-view data-title="FFIC 2026 · Report">Report</a></div></div></article>
+
+<!-- IIBC -->
+<article class="cp"><div class="rk"><small>Top</small>9</div><div>
+<h3>International Investment Banking Competition (IIBC) 2026</h3><div class="meta">Universitas Prasetiya Mulya · April 2026</div>
+<div class="lab">My role</div><div class="chips"><span class="chip">Valuation</span><span class="chip">Deal structure</span><span class="chip">Synergy</span></div>
+<div class="act"><a class="bt" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="IIBC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/iibc-report.pdf" target="_blank" data-view data-title="IIBC 2026 · Report">Report</a></div></div></article>
+
+<!-- UPH -->
+<article class="cp"><div class="rk"><small>Winner</small>3<sup>rd</sup></div><div>
+<h3>Stock Valuation Competition 2026</h3><div class="meta">Universitas Pelita Harapan · June 2026 · Team Investment Network</div>
+<div class="meta" style="color:var(--ink)">Equity research on GGRM.IJ: Sell, target price Rp10,129</div>
+<div class="lab">My role</div><div class="chips"><span class="chip">Company profile</span><span class="chip">Macro analysis</span></div>
+<div class="act"><a class="bt" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/uph-report.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Report">Report</a></div></div></article>
+
+<!-- NBPC -->
+<article class="cp"><div class="rk"><small>Winner</small>2<sup>nd</sup></div><div>
+<h3>National Business Plan Competition, Marketing Days 2025</h3><div class="meta">Trisakti School of Management · September 2025</div>
+<div class="lab">My role</div><div class="chips"><span class="chip">Risk</span><span class="chip">Financial projection</span></div>
+<div class="act"><a class="bt" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="NBPC 2025 · Pitch deck">Pitch deck</a><a class="bt o" href="files/nbpc-report.pdf" target="_blank" data-view data-title="NBPC 2025 · Report">Report</a></div></div></article>
+
+<!-- BNAT -->
+<article class="cp"><div class="rk"><small>Winner</small>3<sup>rd</sup></div><div>
+<h3>Accounting Case Competition BNAT XIV</h3><div class="meta">HIMA Universitas Bina Nusantara · October 2025</div>
+<div class="lab">My role</div><div class="chips"><span class="chip">Team leader</span></div>
+<div class="act"><a class="bt" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="BNAT XIV · Pitch deck">Pitch deck</a><a class="bt o" href="files/bnat-report.pdf" target="_blank" data-view data-title="BNAT XIV · Report">Report</a></div></div></article>
+
+</div></div></section>
+
+<!-- ============ 5. CERTIFICATES & CREDENTIALS ============ -->
+<section class="sec alt" id="credentials"><div class="w"><h2>Certificates & Credentials</h2><div class="cr">
+<p class="sh">Competition certificates</p><div>
+<a href="files/ffic-certificate.pdf" target="_blank"><b>Finance For Indonesia Competition 2026<span>Top 4 Finalist · Finance For Indonesia · September 2026</span></b><i>View ↗</i></a>
+<a href="files/iibc-certificate.pdf" target="_blank"><b>International Investment Banking Competition 2026<span>Top 9 Finalist · Universitas Prasetiya Mulya · April 2026</span></b><i>View ↗</i></a>
+<a href="files/uph-certificate.pdf" target="_blank"><b>Stock Valuation Competition 2026<span>3rd Winner · Universitas Pelita Harapan · June 2026</span></b><i>View ↗</i></a>
+<a href="files/nbpc-certificate.pdf" target="_blank"><b>National Business Plan Competition, Marketing Days 2025<span>2nd Winner · Trisakti School of Management · September 2025</span></b><i>View ↗</i></a>
+<a href="files/bnat-certificate.pdf" target="_blank"><b>Accounting Case Competition BNAT XIV<span>3rd Winner · HIMA Universitas Bina Nusantara · October 2025</span></b><i>View ↗</i></a>
+</div>
+<p class="sh">Credentials</p><div>
+<a href="files/ielts-certificate.pdf" target="_blank"><b>IELTS<span>English proficiency · Score 7.5</span></b><i>View ↗</i></a>
+<a href="files/transcript.pdf" target="_blank"><b>Academic Transcript<span>Universitas Bina Nusantara · Finance · GPA 3.92</span></b><i>View ↗</i></a>
+</div></div></div></section>
+
+<footer><div class="w"><span>© 2026 Gloria Christophera Kusuma · Tangerang, Indonesia</span><span><a href="mailto:gloria.kusuma@binus.ac.id">Email</a><a href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a href="files/cv.pdf" target="_blank">CV</a></span></div></footer>
+
+<!-- PDF viewer (optional: links still open in a new tab without it) -->
+<div id="modal"><div class="t"><b id="mt"></b><span><a id="mo" target="_blank" style="color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase">New tab ↗</a> &nbsp; <button class="btn" onclick="closeM()">Close ✕</button></span></div><iframe id="mf"></iframe></div>
+<script>
+function closeM(){document.getElementById("modal").classList.remove("on");document.getElementById("mf").src=""}
+document.addEventListener("click",function(e){var a=e.target.closest("a[data-view]");if(!a||e.ctrlKey||e.metaKey||innerWidth<820)return;e.preventDefault();var f=a.getAttribute("href");document.getElementById("mt").textContent=a.dataset.title||"";document.getElementById("mf").src=f;document.getElementById("mo").href=f;document.getElementById("modal").classList.add("on")});
+addEventListener("keydown",function(e){if(e.key=="Escape")closeM()});
+</script></body></html>
