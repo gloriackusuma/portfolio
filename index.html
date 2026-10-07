@@ -2,178 +2,401 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gloria Christophera Kusuma — Portfolio</title>
-<meta name="description" content="Finance student at Universitas Bina Nusantara. Equity research and valuation case competitions, lab assistant, student organization experience.">
+<meta name="description" content="Finance student at Universitas Bina Nusantara. Equity research, valuation and investment banking case work, lab assistant, and student organization experience.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%230b1f4d%22/><text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23c8ad72%22 font-family=%22serif%22>G</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#06122b;--navy:#0b1f4d;--cob:#2456e6;--sky:#7fb2ff;--ice:#eaf1ff;--paper:#f6f9ff;--gold:#c8ad72;--mut:#51607f;--ln:#c9d7f3}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;font:16px/1.65 'DM Sans',sans-serif;color:var(--ink);background:var(--paper)}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
-a{color:inherit}.w{max-width:1100px;margin:auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:30;background:var(--navy);border-bottom:1px solid rgba(200,173,114,.4)}
-nav .w{display:flex;justify-content:space-between;align-items:center;height:52px}
-nav b{font:600 20px 'Cormorant Garamond',serif;letter-spacing:.08em;color:#fff}
-nav div{display:flex;gap:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;overflow-x:auto;white-space:nowrap}
-nav a{color:#c7d6f5;text-decoration:none}nav a:hover{color:var(--gold)}
-.hero{color:#fff;padding:64px 0 56px;background:radial-gradient(55% 90% at 85% 0%,rgba(36,86,230,.7),transparent 70%),radial-gradient(40% 60% at 5% 100%,rgba(127,178,255,.22),transparent 70%),linear-gradient(160deg,#06122b,#0b1f4d 70%,#12306f)}
-.hd{display:flex;gap:28px;align-items:center}
-.av{flex:none;width:104px;height:104px;border-radius:50%;border:2px solid var(--gold);padding:4px}
-.ph{position:relative;display:grid;place-items:center;text-align:center;font-size:11px;color:var(--mut);background:var(--ice);overflow:hidden}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.av .ph{width:100%;height:100%;border-radius:50%;background:rgba(255,255,255,.1);color:#a9c3f5;line-height:1.2}
-.hero h1{font-size:clamp(38px,5.5vw,62px)}.sub{color:var(--gold);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px}
-.sum{max-width:720px;color:#c7d6f5;margin:28px 0 0}
-.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
-.btn{font:700 12px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:11px 20px;border:1px solid rgba(255,255,255,.5);color:#fff;background:none;cursor:pointer;transition:.25s}
-.btn:hover{transform:translateY(-2px);border-color:var(--gold)}.btn.g{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.sec{padding:76px 0;border-bottom:1px solid var(--ln)}.sec.alt{background:linear-gradient(180deg,var(--ice),var(--paper))}
-.sec .w{display:grid;grid-template-columns:230px 1fr;gap:48px}
-h2{font-size:38px;position:sticky;top:76px;align-self:start}h2:after{content:"";display:block;width:36px;height:2px;background:var(--gold);margin-top:14px}
-.it{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--ln)}.it:first-child{border-top:0;padding-top:0}
-.dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--cob);padding-top:5px}
-.it h3{font-size:26px}.meta{font-size:14px;color:var(--mut);margin-top:4px}
-ul{margin:10px 0 0;padding:0;list-style:none}li{position:relative;padding:3px 0 3px 20px;color:#34415f;font-size:15px}li:before{content:"–";position:absolute;left:0;color:var(--gold);font-weight:700}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.chip{border:1px solid #9db6ee;color:var(--navy);font-size:12px;padding:3px 12px;border-radius:99px;background:rgba(255,255,255,.65)}
-.lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-top:14px}
-.ov{display:grid;grid-template-columns:1fr 1fr;gap:28px}.ov dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cob);font-weight:700}.ov dd{margin:2px 0 16px}
-.ts{display:grid;grid-template-columns:1fr 210px;gap:28px;align-items:start}
-.fr{position:relative;aspect-ratio:4/3}.fr:before{content:"";position:absolute;inset:10px -10px -10px 10px;border:1px solid var(--cob);transition:.35s}.fr:hover:before{inset:0}
-.fr .ph{position:absolute;inset:0;box-shadow:0 14px 30px rgba(11,31,77,.18)}
-.cp{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:30px 20px;border-top:1px solid var(--ln);transition:.3s;border-left:3px solid transparent}
-.cp:last-child{border-bottom:1px solid var(--ln)}.cp:hover{background:#fff;border-left-color:var(--gold);box-shadow:0 10px 30px rgba(11,31,77,.08)}
-.rk{font:700 64px/.9 'Cormorant Garamond',serif;color:var(--cob)}.rk small{display:block;font:700 11px 'DM Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}.rk sup{font-size:22px}
-.cp h3{font-size:27px}.act{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.bt{font:700 11px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:9px 18px;background:var(--navy);color:#fff;transition:.25s;border:1px solid var(--navy)}
-.bt.o{background:none;color:var(--navy)}.bt:hover{background:var(--cob);border-color:var(--cob);color:#fff;transform:translateY(-2px)}
-.miss{display:none!important}
-.sh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cob);font-weight:700;margin:0 0 8px}.sh+div{margin-bottom:40px}
-.cr a{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--ln);text-decoration:none;transition:.25s}
-.cr a:last-child{border-bottom:1px solid var(--ln)}.cr a:hover{padding-left:14px;color:var(--cob)}.cr a.miss{display:flex!important;pointer-events:none}.cr a.miss i{display:none}
-.cr b{font:600 22px 'Cormorant Garamond',serif}.cr span{font-size:13px;color:var(--mut);display:block;font-weight:400}.cr i{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;white-space:nowrap}
-footer{background:var(--navy);color:#a9bde6;padding:36px 0;font-size:13px}footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#fff;margin-left:20px;text-decoration:none;border-bottom:1px solid var(--gold)}
-#modal{position:fixed;inset:0;background:rgba(3,10,25,.9);display:none;z-index:60;padding:20px}#modal.on{display:flex;flex-direction:column}
-#modal .t{display:flex;justify-content:space-between;color:#fff;padding-bottom:12px;gap:12px;align-items:center}#modal iframe{flex:1;border:0;background:#fff}
-.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
-@media(max-width:820px){.sec .w,.ts,.ov{grid-template-columns:1fr}.sec .w{gap:24px}h2{position:static}.it{grid-template-columns:1fr;gap:4px}.hd{flex-direction:column;align-items:flex-start}.cp{grid-template-columns:1fr;gap:10px}.ts .fr{max-width:260px}nav b{display:none}}
-</style></head><body>
-<nav><div class="w"><b>GCK</b><div><a href="#overview">Overview</a><a href="#organizations">Organizations</a><a href="#lab">Lab Assistant</a><a href="#competitions">Competitions</a><a href="#credentials">Credentials</a></div></div></nav>
+:root{
+  --ink:#06122b; --navy:#0b1f4d; --cob:#2456e6; --sky:#7fb2ff;
+  --ice:#eaf1ff; --paper:#f6f9ff; --gold:#c8ad72; --mut:#51607f; --ln:#c9d7f3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font:16px/1.7 'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Archivo',sans-serif;font-weight:800;margin:0;line-height:1.05;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 28px;position:relative}
+.lab{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 
-<!-- ============ 1. OVERVIEW ============ -->
-<header class="hero" id="overview"><div class="w">
-<div class="hd">
-<!-- Profile photo: upload files/portrait.jpg -->
-<div class="av"><div class="ph"><img src="files/portrait.jpg" alt="" onerror="this.remove()">Add photo</div></div>
-<div><h1>Gloria Christophera Kusuma</h1><div class="sub">Finance · Universitas Bina Nusantara</div></div></div>
-<p class="sum">Finance student at Universitas Bina Nusantara (GPA 3.92) with experience in equity research and valuation case competitions, teaching accounting and audit software as a lab assistant, and finance and event roles in student organizations.</p>
-<div class="btns"><a class="btn g" href="files/cv.pdf" target="_blank">Download CV</a><a class="btn" href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="mailto:gloria.kusuma@binus.ac.id">Email</a></div>
-<dl class="ov" style="margin:44px 0 0;color:#dbe7ff"><div><dt style="color:var(--gold)">Education</dt><dd>Universitas Bina Nusantara, Bachelor of Accounting, 2024 – Present<br>SMA Zion Makassar, Natural Sciences, 2022 – 2024</dd></div>
-<div><dt style="color:var(--gold)">Tools & Language</dt><dd>MYOB, Odoo ERP, ACL<br>English (IELTS 7.5) · Based in Tangerang, Indonesia</dd></div></dl>
-</div></header>
+/* ---------- decorative elements (few, and kept to the edges) ---------- */
+.stripes{position:absolute;width:130px;height:130px;background:repeating-linear-gradient(135deg,var(--gold) 0 2px,transparent 2px 14px);pointer-events:none}
+.ring{position:absolute;border:2px solid var(--gold);border-radius:50%;pointer-events:none}
 
-<!-- ============ 2. ORGANIZATIONAL EXPERIENCE ============ -->
-<!-- To add an entry: copy one <div class="it">...</div> block and paste it below. -->
-<section class="sec" id="organizations"><div class="w"><h2>Organizational Experience</h2><div>
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:40;background:var(--navy);border-bottom:1px solid rgba(200,173,114,.45)}
+.bar .w{display:flex;justify-content:space-between;align-items:center;height:54px;gap:20px}
+.bar b{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;white-space:nowrap;font-weight:800}
+.bar nav{display:flex;gap:26px;overflow-x:auto;white-space:nowrap}
+.bar nav a{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:#c7d6f5;text-decoration:none;transition:color .2s}
+.bar nav a:hover{color:var(--gold)}
 
-<div class="it"><div class="dt">Apr – Jun 2025</div><div><h3>Treasurer · TFI Waste to Wonder (WTW)</h3><ul>
-<li>Managed finances for an ecoenzyme workshop that reduces household organic waste</li>
-<li>Prepared the budget, recorded income and expenses, and wrote the final financial report</li>
-<li>Coordinated with the preparation team on tools and materials</li></ul></div></div>
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(55% 90% at 90% 0%,rgba(36,86,230,.55),transparent 70%),linear-gradient(160deg,#06122b,#0b1f4d 70%,#12306f);color:#fff;overflow:hidden;position:relative}
+.hero .w{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:center;padding-top:88px;padding-bottom:96px}
+.hero .full{color:var(--gold);font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;margin-bottom:22px}
+.hero h1{font-size:clamp(64px,10.5vw,148px);font-weight:900;line-height:.88;letter-spacing:-.045em;text-transform:uppercase}
+.hero .role{font:italic 600 clamp(24px,2.8vw,32px)/1.25 'Cormorant Garamond',serif;margin-top:28px;color:#e4ecff}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.btn{font:700 12px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:13px 24px;border:1px solid rgba(255,255,255,.55);color:#fff;transition:transform .2s,border-color .2s;display:inline-block}
+.btn:hover{transform:translateY(-2px);border-color:var(--gold)}
+.btn.g{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.pic{position:relative;width:210px;aspect-ratio:1;justify-self:center}
+.pic:before{content:"";position:absolute;inset:-30px -30px 30px 30px;border-radius:50%;background:repeating-linear-gradient(135deg,var(--gold) 0 2px,transparent 2px 12px);opacity:.85}
+.pic:after{content:"";position:absolute;inset:18px 18px -18px -18px;border-radius:50%;border:1.5px solid var(--gold)}
+.pic .photo{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;box-shadow:0 0 0 6px #0b1f4d}
+.pic .slot{font-size:11px;padding:30px;gap:6px}
+.pic .slot svg{width:22px;height:22px}
+.hero .ring{width:240px;height:240px;left:-120px;bottom:-100px;opacity:.7}
 
-<div class="it"><div class="dt">Mar – Jun 2025</div><div><h3>Fundraising Division Coordinator · TFI RULES (Ruang Les)</h3><ul>
-<li>Coordinated fundraising for educational activities at Panti Asuhan Ibnu Sabil</li>
-<li>Managed pre-order sales and ensured orders matched buyers' requirements</li></ul></div></div>
+/* ---------- photo slots ---------- */
+.photo{position:relative;overflow:hidden;display:block;background:var(--ice);border:1px dashed #9db6ee;margin:0}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter:grayscale(1) contrast(1.04);transition:filter .5s}
+.photo:hover img{filter:none}
+.slot{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:12px;letter-spacing:.08em;color:var(--mut);padding:10px}
+.slot svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.4}
+.slot small{font-size:10.5px;letter-spacing:.04em;opacity:.8;word-break:break-all}
+.dark .photo,.hero .photo{background:rgba(127,178,255,.1);border-color:rgba(200,173,114,.55)}
+.dark .slot,.hero .slot{color:#a9c3f5}
+.photo:has(img){border-width:0}
+.clean .empty{display:none!important}
+/* want the original colors in photos instead of black and white? delete the two "filter" lines above */
 
-<div class="it"><div class="dt">Feb - May 2026</div><div><h3>Committee · BNFC StockQuest 2026</h3><ul>
-<li>Staff of Registration</li><li>Banker in StockLab Competition</li><li>Liaison Officer (LO) for Trading and Equity Research teams</li></ul></div></div>
+/* ---------- sections ---------- */
+.sec{padding:104px 0;position:relative}
+.sec.ice{background:linear-gradient(180deg,var(--ice),var(--paper))}
+.sec.dark{background:linear-gradient(170deg,#06122b,#0b1f4d 75%);color:#fff;overflow:hidden}
+.sec.dark:before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--gold)}
+.head{max-width:640px;margin-bottom:56px}
+.head h2{font-size:clamp(40px,5.5vw,76px);font-weight:900;letter-spacing:-.035em}
+.head p{color:var(--mut);margin-top:18px;font-size:17px}
+.dark .head p{color:#bccaef}
 
-<div class="it"><div class="dt">Aug - Nov 2026</div><div><h3>Vice Head of Event · BNFC Benchmarking</h3></div></div>
+/* ---------- about ---------- */
+.about .w{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;padding-top:96px;padding-bottom:96px;align-items:start}
+.about .big{font:500 clamp(26px,3vw,38px)/1.28 'Cormorant Garamond',serif;color:var(--navy)}
+.facts>div{padding:20px 0;border-top:1px solid var(--ln)}
+.facts>div:first-child{border-top:2px solid var(--gold)}
+.facts .lab{color:var(--cob)}
+.facts p{margin-top:8px;font-size:15.5px;line-height:1.6}
 
-<div class="it"><div class="dt">Sept - Nov 2026</div><div><h3>Staff of Sponsorship · BNFC Finsight</h3></div></div>
+/* ---------- competitions ---------- */
+.work{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:56px 0;border-top:1px solid rgba(200,173,114,.4);align-items:start}
+.work:last-child{padding-bottom:0}
+.work .photo{aspect-ratio:var(--ar,4/3)}
+.work:nth-of-type(even){grid-template-columns:7fr 5fr}
+.work:nth-of-type(even) .photo{order:2}
+.work .res{color:var(--gold)}
+.work h3{font-size:clamp(26px,2.8vw,36px);margin-top:12px;letter-spacing:-.025em}
+.work .host{margin-top:10px;font-size:14px;color:#a9c3f5}
+.work .desc{margin-top:20px;color:#d6e0f8;max-width:600px}
+.act{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.bt{font:700 11px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 22px;background:var(--gold);color:var(--ink);border:1px solid var(--gold);transition:transform .2s}
+.bt.o{background:none;color:#fff;border-color:rgba(255,255,255,.55)}
+.bt:hover{transform:translateY(-2px)}
+.dark .ring{width:300px;height:300px;right:-120px;top:-110px;opacity:.5}
 
-</div></div></section>
+/* ---------- skills ---------- */
+.skills{display:grid;grid-template-columns:1fr 1fr;column-gap:72px}
+.sk{padding:30px 0 34px;border-top:1px solid var(--ln)}
+.skills .sk:nth-last-child(-n+2){border-bottom:1px solid var(--ln)}
+.sk h3{font-size:22px;letter-spacing:-.015em}
+.sk p{margin-top:10px;font-size:15.5px;color:#3b4a6b;max-width:480px}
+.sk .use{margin-top:16px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--cob);line-height:1.8}
+.sk .use span{white-space:nowrap}
+.sk .use i{font-style:normal;color:var(--gold);padding:0 6px}
 
-<!-- ============ 3. LAB ASSISTANT & TUTOR ============ -->
-<!-- Photo for each entry: upload the file named in the img src below into the files folder. -->
-<section class="sec alt" id="lab"><div class="w"><h2>Lab Assistant & Tutor</h2><div>
+/* ---------- lab + organizations rows ---------- */
+.row{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:center;padding:52px 0;border-top:1px solid var(--ln)}
+.row:last-child{border-bottom:1px solid var(--ln)}
+.when{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--cob)}
+.row h3{font-size:clamp(26px,2.8vw,36px);margin-top:12px;letter-spacing:-.025em}
+.meta{color:var(--mut);font-size:14px;margin-top:8px}
+.org .meta{font:italic 600 21px/1.3 'Cormorant Garamond',serif;color:var(--cob)}
+ul{margin:18px 0 0;padding:0;list-style:none}
+li{position:relative;padding:5px 0 5px 26px;color:#34415f;font-size:15.5px}
+li:before{content:"";position:absolute;left:0;top:17px;width:14px;height:2px;background:var(--gold)}
+.fr{position:relative}
+.fr:before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid var(--cob);transition:.35s;z-index:0}
+.fr:hover:before{inset:0}
+.fr .photo{aspect-ratio:4/3;position:relative;z-index:1;box-shadow:0 0 0 9px #fff,0 0 0 10px rgba(6,18,43,.15),0 16px 30px rgba(6,18,43,.16)}
+.row.org{grid-template-columns:5fr 6fr;gap:64px}
+#organizations{overflow:hidden}
+.dump{position:relative;aspect-ratio:6/5;isolation:isolate}
+.dump:before{content:"";position:absolute;z-index:-1;width:34%;aspect-ratio:1;right:-3%;bottom:-6%;background:repeating-linear-gradient(135deg,var(--gold) 0 2px,transparent 2px 12px)}
+.org:nth-of-type(even) .dump:before{right:auto;left:-3%;bottom:auto;top:-6%;width:30%;border:2px solid var(--gold);border-radius:50%;background:none}
+.pol{position:absolute;margin:0;background:#fff;padding:8px 8px 30px;box-shadow:0 12px 26px rgba(6,18,43,.25);transition:transform .35s}
+.pol .photo{aspect-ratio:var(--ar)}
+.pol:before{content:"";position:absolute;top:-11px;left:50%;width:56px;height:20px;margin-left:-28px;background:rgba(200,173,114,.72);transform:rotate(var(--tape,-4deg));z-index:3;border:1px solid rgba(6,18,43,.1)}
+.pol:nth-child(1){left:0;top:6%;width:46%;--ar:4/5;transform:rotate(-5deg);z-index:2}
+.pol:nth-child(2){right:0;top:0;width:42%;--ar:1/1;transform:rotate(4deg);z-index:3;--tape:6deg}
+.pol:nth-child(3){left:30%;bottom:0;width:44%;--ar:5/4;transform:rotate(-2deg);z-index:4;--tape:-9deg}
+.org:nth-of-type(even) .pol:nth-child(1){left:auto;right:2%;top:2%;transform:rotate(5deg)}
+.org:nth-of-type(even) .pol:nth-child(2){right:auto;left:0;top:10%;width:40%;transform:rotate(-4deg);--tape:-6deg}
+.org:nth-of-type(even) .pol:nth-child(3){left:auto;right:24%;transform:rotate(3deg);--tape:8deg}
+.pol:hover{transform:rotate(0) scale(1.05);z-index:10}
 
-<div class="it"><div class="dt">Sep 2025 – Jan 2026</div><div class="ts"><div><h3>Introduction to Accounting</h3><div class="meta">Universitas Bina Nusantara</div><ul>
-<li>Taught and mentored students in using MYOB and Odoo ERP for digital accounting</li>
-<li>Supported lab projects on digitizing SME financial reports in West Jakarta</li>
-<li>Trained students on transaction recording, financial statement preparation, and ERP integration</li></ul></div>
-<div class="fr"><div class="ph"><img src="files/aslab-accounting-finance.jpg" alt="" onerror="this.remove()">Add photo<br>aslab-accounting-finance.jpg</div></div></div></div>
+/* ---------- credentials ---------- */
+.cr h3{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cob);margin:48px 0 14px;font-weight:700}
+.cr h3:first-child{margin-top:0}
+.cr a{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--ln);text-decoration:none;transition:padding .25s,color .25s}
+.cr a:hover{padding-left:14px;color:var(--cob)}
+.cr a:last-child{border-bottom:1px solid var(--ln)}
+.cr b{font-size:19px;letter-spacing:-.015em;font-weight:800;line-height:1.25;display:block}
+.cr span{font-size:14px;color:var(--mut);display:block;margin-top:2px}
+.cr i{font-style:normal;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--cob);white-space:nowrap}
 
-<div class="it"><div class="dt">Feb - Jun 2026</div><div class="ts"><div><h3>Method & Practice of Computerized Audit</h3><div class="meta">Universitas Bina Nusantara</div><ul>
-<li>Taught students to use ACL audit software</li></ul></div>
-<div class="fr"><div class="ph"><img src="files/aslab-audit-acl.jpg" alt="" onerror="this.remove()">Add photo<br>aslab-audit-acl.jpg</div></div></div></div>
+/* ---------- footer ---------- */
+footer{background:linear-gradient(170deg,#06122b,#0b1f4d 75%);color:#fff;padding:104px 0 40px;position:relative;overflow:hidden}
+footer h2{font-size:clamp(60px,10vw,140px);font-weight:900;line-height:.88;letter-spacing:-.045em;text-transform:uppercase}
+footer .stripes{left:-40px;bottom:80px;opacity:.75}
+footer .ring{width:280px;height:280px;right:-90px;top:-80px;opacity:.55}
+footer p.o{margin-top:26px;max-width:460px;color:#bccaef;font-size:18px}
+footer .btns{margin:32px 0 56px}
+footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top:22px;font-size:12px;letter-spacing:.08em;color:#a9bde6}
 
-<div class="it"><div class="dt">Feb - Jun 2026</div><div class="ts"><div><h3>Advanced Tax</h3><div class="meta">Universitas Bina Nusantara</div><ul>
-<li>Tutored students on advanced taxation material</li></ul></div>
-<div class="fr"><div class="ph"><img src="files/tutor-advanced-tax.jpg" alt="" onerror="this.remove()">Add photo<br>tutor-advanced-tax.jpg</div></div></div></div>
+/* ---------- modal ---------- */
+#modal{position:fixed;inset:0;background:rgba(3,10,25,.92);display:none;z-index:60;padding:20px}
+#modal.on{display:flex;flex-direction:column}
+#modal .t{display:flex;justify-content:space-between;color:#fff;padding-bottom:12px;gap:12px;align-items:center}
+#modal iframe{flex:1;border:0;background:#fff}
+#modal a{color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+#modal button{font:700 12px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:9px 18px;border:1px solid rgba(255,255,255,.5);background:none;color:#fff;cursor:pointer}
 
-</div></div></section>
+@media(max-width:900px){
+  .hero .w,.about .w,.work,.row,.skills{grid-template-columns:1fr}
+  .hero .w{gap:56px;padding-top:56px;padding-bottom:72px}
+  .pic{width:180px;justify-self:start;margin-left:30px}
+  .about .w{gap:40px;padding-top:72px;padding-bottom:72px}
+  .work,.row{gap:28px}
+  .work:nth-of-type(even){grid-template-columns:1fr}
+  .work:nth-of-type(even) .photo{order:0}
+  .skills .sk:nth-last-child(-n+2){border-bottom:0}
+  .skills .sk:last-child{border-bottom:1px solid var(--ln)}
+  .fr{max-width:480px}
+  .bar b{display:none}
+  .sec{padding:76px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head>
+<!--
+  PHOTO SPACES
+  Every dashed box is a photo slot. Put the file named in the box into your "files" folder and it fills in automatically.
+  When you're done, change <body> to <body class="clean"> to hide any slot you left empty.
+  Want more photos on an entry? Copy one <figure class="photo">...</figure> block and rename its file.
+-->
+<body>
 
-<!-- ============ 4. COMPETITIONS ============ -->
-<!-- Each competition is one <article> block. Delete a button if you have no file for it. -->
-<section class="sec" id="competitions"><div class="w"><h2>Competitions</h2><div>
+<div class="bar"><div class="w"><b>Gloria Kusuma</b><nav aria-label="Main"><a href="#competitions">Competitions</a><a href="#skills">Skills</a><a href="#lab">Lab assistant</a><a href="#organizations">Organizations</a><a href="#credentials">Credentials</a></nav></div></div>
 
-<!-- FFIC -->
-<article class="cp"><div class="rk"><small>Top</small>4</div><div>
-<h3>Finance For Indonesia Competition (FFIC) 2026</h3><div class="meta">Finance For Indonesia (FFI) · September 2026</div>
-<div class="lab">My role</div><div class="chips"><span class="chip">Company profile</span><span class="chip">Strategic fit</span><span class="chip">Synergy</span><span class="chip">Risk</span></div>
-<div class="act"><a class="bt" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="FFIC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="https://docs.google.com/spreadsheets/d/1j4DeGrZ1aaCgOqZMx3UXAjXlhnsGX9xV/edit?usp=sharing&ouid=107128840551177674089&rtpof=true&sd=true" target="_blank" data-view data-title="FFIC 2026 · Excel">Excel</a></div></div></article>
-
-<!-- UPH -->
-<article class="cp"><div class="rk"><small>Winner</small>3<sup>rd</sup></div><div>
-<h3>Stock Valuation Competition 2026</h3><div class="meta">Universitas Pelita Harapan · June 2026 · Team Investment Network</div>
-<div class="lab">My role</div><div class="chips"><span class="chip">Company profile</span><span class="chip">Macro analysis</span></div>
-<div class="act"><a class="bt" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/uph-report.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Report">Report</a></div></div></article>
-
-<!-- IIBC -->
-<article class="cp"><div class="rk"><small>Top</small>9</div><div>
-<h3>International Investment Banking Competition (IIBC) 2026</h3><div class="meta">Universitas Prasetiya Mulya · April 2026</div>
-<div class="lab">My role</div><div class="chips"><span class="chip">Valuation</span><span class="chip">Deal structure</span><span class="chip">Synergy</span></div>
-<div class="act"><a class="bt" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="IIBC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/iibc-report.pdf" target="_blank" data-view data-title="IIBC 2026 · Report">Report</a></div></div></article>
-
-<!-- NBPC -->
-<article class="cp"><div class="rk"><small>Winner</small>2<sup>nd</sup></div><div>
-<h3>National Business Plan Competition, Marketing Days 2025</h3><div class="meta">Trisakti School of Management · September 2025</div>
-<div class="lab">My role</div><div class="chips"><span class="chip">Risk</span><span class="chip">Financial projection</span></div>
-<div class="act"><a class="bt" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="NBPC 2025 · Pitch deck">Pitch deck</a><a class="bt o" href="files/nbpc-report.pdf" target="_blank" data-view data-title="NBPC 2025 · Report">Report</a></div></div></article>
-
-<!-- BNAT -->
-<article class="cp"><div class="rk"><small>Winner</small>3<sup>rd</sup></div><div>
-<h3>Accounting Case Competition BNAT XIV</h3><div class="meta">HIMA Universitas Bina Nusantara · October 2025</div>
-<div class="lab">My role</div><div class="chips"><span class="chip">Team leader</span></div>
-<div class="act"><a class="bt" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="BNAT XIV · Pitch deck">Pitch deck</a><a class="bt o" href="files/bnat-report.pdf" target="_blank" data-view data-title="BNAT XIV · Report">Report</a></div></div></article>
-
-</div></div></section>
-
-<!-- ============ 5. CERTIFICATES & CREDENTIALS ============ -->
-<section class="sec alt" id="credentials"><div class="w"><h2>Certificates & Credentials</h2><div class="cr">
-<p class="sh">Competition certificates</p><div>
-<a href="files/ffic-certificate.pdf" target="_blank" data-view data-title="Finance For Indonesia Competition 2026 · Certificate"> <b> Finance For Indonesia Competition 2026 <span>Top 4 Finalist · Finance For Indonesia · September 2026</span> </b> <i>View</i> </a>
-<a href="files/iibc-certificate.pdf" target="_blank" data-view data-title="International Investment Banking Competition 2026 · Certificate"> <b> International Investment Banking Competition 2026 <span> Top 9 Finalist · Universitas Prasetiya Mulya · April 2026</span> </b> <i>View</i> </a>
-<a href="files/uph-certificate.pdf" target="_blank" data-view data-title="Stock Valuation Competition 2026 · Certificate"> <b> Stock Valuation Competition 2026 <span>3rd Winner · Universitas Pelita Harapan · June 2026</span> </b> <i>View</i> </a>
-<a href="files/nbpc-certificate.pdf" target="_blank" data-view data-title="National Business Plan Competition 2025 · Certificate"> <b> National Business Plan Competition, Marketing Days 2025 <span>2nd Winner · Trisakti School of Management · September 2025</span> </b> <i>View</i> </a>
-<a href="files/bnat-certificate.pdf" target="_blank" data-view data-title="Accounting Case Competition BNAT XIV · Certificate"> <b> Accounting Case Competition BNAT XIV <span>3rd Winner · HIMA Universitas Bina Nusantara · October 2025</span> </b> <i>View</i> </a>
-</div>
-
-<p class="sh">Credentials</p>
+<!-- ============ HERO ============ -->
+<header class="hero" id="overview">
+<div class="ring" aria-hidden="true"></div>
+<div class="w">
 <div>
-<a href="files/ielts-certificate.pdf" target="_blank" data-view data-title="IELTS · Certificate"> <b> IELTS <span>English proficiency · Score 7.5</span> </b> <i>View</i> </a>
-
-<a href="files/transcript.pdf" target="_blank" data-view data-title="Academic Transcript"> <b> Academic Transcript <span>Universitas Bina Nusantara · Finance · GPA 3.92</span> </b> <i>View</i> </a>
+<p class="full">Gloria Christophera Kusuma</p>
+<h1 aria-label="Gloria Kusuma">Gloria<br>Kusuma.</h1>
+<p class="role">Finance student, Universitas Bina Nusantara</p>
+<div class="btns"><a class="btn g" href="files/cv.pdf" target="_blank">Download CV</a><a class="btn" href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="mailto:gloria.kusuma@binus.ac.id">Email</a></div>
 </div>
+<div class="pic">
+<figure class="photo"><img src="files/portrait.jpg" alt="Portrait of Gloria Christophera Kusuma" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add your portrait<small>files/portrait.jpg</small></figcaption></figure>
+</div>
+</div>
+</header>
 
-</div> </div> </section>
+<!-- ============ ABOUT ============ -->
+<section class="about"><div class="w">
+<p class="big">I study finance, and most of my work so far has been in case competitions: valuing companies, structuring deals, and building the projections behind a business plan. Alongside that, I teach accounting, audit and tax to other students, and I help run finance, event and sponsorship teams in student organizations.</p>
+<div class="facts">
+<div><p class="lab">Education</p><p>Universitas Bina Nusantara, Finance, 2024 to present, GPA 3.92<br>SMA Zion Makassar, Natural Sciences, 2022 to 2024</p></div>
+<div><p class="lab">Languages</p><p>English and Bahasa Indonesia</p></div>
+<div><p class="lab">Based in</p><p>Tangerang, Indonesia</p></div>
+</div>
+</div></section>
 
-<footer><div class="w"><span>© 2026 Gloria Christophera Kusuma · Tangerang, Indonesia</span><span><a href="mailto:gloria.kusuma@binus.ac.id">Email</a><a href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a href="files/cv.pdf" target="_blank">CV</a></span></div></footer>
+<!-- ============ COMPETITIONS ============ -->
+<section class="sec dark" id="competitions">
+<div class="ring" aria-hidden="true"></div>
+<div class="w">
+<div class="head"><h2>Competitions</h2><p>Case work in equity research, valuation, investment banking, business planning and accounting, with the pitch deck and report behind each one.</p></div>
 
-<!-- PDF viewer (optional: links still open in a new tab without it) -->
-<div id="modal"><div class="t"><b id="mt"></b><span><a id="mo" target="_blank" style="color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase">New tab ↗</a> &nbsp; <button class="btn" onclick="closeM()">Close ✕</button></span></div><iframe id="mf"></iframe></div>
+<article class="work">
+<figure class="photo" style="--ar:4/3"><img src="files/comp-ffic.jpg" alt="Team at the Finance For Indonesia Competition 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-ffic.jpg</small></figcaption></figure>
+<div>
+<p class="lab res">Top 4 finalist</p>
+<h3>Finance For Indonesia Competition 2026</h3>
+<p class="host">Finance For Indonesia (FFI), September 2026</p>
+<p class="desc">The case centred on TOWR's proposed acquisition of a 51% stake in WIFI. I wrote the company profile, strategic fit, synergy and risk sections of the pitch: who the two companies are, why the combination makes strategic sense, where the value comes from, and what could go wrong. The team's Excel model supports the numbers behind it.</p>
+<div class="act"><a class="bt" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="FFIC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="https://docs.google.com/spreadsheets/d/1j4DeGrZ1aaCgOqZMx3UXAjXlhnsGX9xV/edit?usp=sharing&ouid=107128840551177674089&rtpof=true&sd=true" target="_blank" rel="noopener">Excel model</a></div>
+</div>
+</article>
+
+<article class="work">
+<figure class="photo" style="--ar:1/1"><img src="files/comp-uph.jpg" alt="Team Investment Network at the UPH Stock Valuation Competition" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-uph.jpg</small></figcaption></figure>
+<div>
+<p class="lab res">3rd place</p>
+<h3>Stock Valuation Competition 2026</h3>
+<p class="host">Universitas Pelita Harapan, June 2026, with Team Investment Network</p>
+<p class="desc">Our team built and pitched a valuation of a listed company. I handled the company profile and the macro analysis: how the business makes its money, and how the wider economy shapes its outlook and the assumptions behind our valuation.</p>
+<div class="act"><a class="bt" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/uph-report.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Report">Report</a></div>
+</div>
+</article>
+
+<article class="work">
+<figure class="photo" style="--ar:4/3"><img src="files/comp-iibc.jpg" alt="Team at the International Investment Banking Competition 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-iibc.jpg</small></figcaption></figure>
+<div>
+<p class="lab res">Top 9 finalist</p>
+<h3>International Investment Banking Competition 2026</h3>
+<p class="host">Universitas Prasetiya Mulya, April 2026</p>
+<p class="desc">An investment banking case built around a proposed transaction. I worked on the three pieces that decide whether a deal makes sense: what the target is worth, how the transaction is structured, and which synergies justify the price.</p>
+<div class="act"><a class="bt" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="IIBC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/iibc-report.pdf" target="_blank" data-view data-title="IIBC 2026 · Report">Report</a></div>
+</div>
+</article>
+
+<article class="work">
+<figure class="photo" style="--ar:1/1"><img src="files/comp-nbpc.jpg" alt="Team at the National Business Plan Competition, Marketing Days 2025" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-nbpc.jpg</small></figcaption></figure>
+<div>
+<p class="lab res">2nd place</p>
+<h3>National Business Plan Competition, Marketing Days 2025</h3>
+<p class="host">Trisakti School of Management, September 2025</p>
+<p class="desc">A business plan competition on the marketing side of business. I analysed the risks facing the venture and built the financial projections, so that the plan's numbers and its risks told one consistent story.</p>
+<div class="act"><a class="bt" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="NBPC 2025 · Pitch deck">Pitch deck</a><a class="bt o" href="files/nbpc-report.pdf" target="_blank" data-view data-title="NBPC 2025 · Report">Report</a></div>
+</div>
+</article>
+
+<article class="work">
+<figure class="photo" style="--ar:4/3"><img src="files/comp-bnat.jpg" alt="Team at the Accounting Case Competition BNAT XIV" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-bnat.jpg</small></figcaption></figure>
+<div>
+<p class="lab res">3rd place</p>
+<h3>Accounting Case Competition BNAT XIV</h3>
+<p class="host">HIMA Universitas Bina Nusantara, October 2025</p>
+<p class="desc">An accounting case competition run by the student association at my own university. I led the team: dividing the work, keeping the analysis consistent across everyone's sections, and getting it ready for the final presentation.</p>
+<div class="act"><a class="bt" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="BNAT XIV · Pitch deck">Pitch deck</a><a class="bt o" href="files/bnat-report.pdf" target="_blank" data-view data-title="BNAT XIV · Report">Report</a></div>
+</div>
+</article>
+
+</div></section>
+
+<!-- ============ SKILLS ============ -->
+<section class="sec ice" id="skills"><div class="w">
+<div class="head"><h2>Skills</h2><p>What I do, based on the work in this portfolio.</p></div>
+<div class="skills">
+<div class="sk"><h3>Valuation and financial modelling</h3><p>Estimating what a company is worth and building the financial models behind it, with assumptions clear enough for a teammate or a judge to follow.</p><p class="use"><span>IIBC 2026</span><i>/</i><span>UPH Stock Valuation</span><i>/</i><span>FFIC 2026</span></p></div>
+<div class="sk"><h3>Equity research and macro analysis</h3><p>Profiling a company, understanding how it earns its money, and reading the economic environment around it before forming a view.</p><p class="use"><span>UPH Stock Valuation</span><i>/</i><span>BNFC StockQuest</span></p></div>
+<div class="sk"><h3>Deal structuring and synergies</h3><p>Working out how a transaction fits together, what each side gains, and where the value comes from.</p><p class="use"><span>IIBC 2026</span><i>/</i><span>FFIC 2026</span></p></div>
+<div class="sk"><h3>Risk and financial projections</h3><p>Identifying what could go wrong with a plan and turning the business model into projections that account for it.</p><p class="use"><span>NBPC 2025</span><i>/</i><span>FFIC 2026</span></p></div>
+<div class="sk"><h3>Accounting and audit systems</h3><p>Recording, reporting and running computerized audit work in accounting software, well enough to teach it to students.</p><p class="use"><span>Introduction to Accounting</span><i>/</i><span>Computerized Audit</span></p></div>
+<div class="sk"><h3>Budgeting and financial reporting</h3><p>Planning a budget, tracking income and expenses as they happen, and closing with a clear final report.</p><p class="use"><span>WTW treasurer</span><i>/</i><span>RULES fundraising</span></p></div>
+<div class="sk"><h3>Teaching and mentoring</h3><p>Explaining accounting, audit and tax at the student's level, and guiding them through the practical work.</p><p class="use"><span>Lab assistant and tutor roles</span></p></div>
+<div class="sk"><h3>Leadership and coordination</h3><p>Leading teams and committees, and keeping events, sales and sponsorship work moving in the same direction.</p><p class="use"><span>BNAT team leader</span><i>/</i><span>Benchmarking</span><i>/</i><span>Finsight</span></p></div>
+</div>
+</div></section>
+
+<!-- ============ LAB ASSISTANT ============ -->
+<section class="sec" id="lab"><div class="w">
+<div class="head"><h2>Lab assistant and tutor</h2><p>Helping other students learn the tools and the thinking.</p></div>
+
+<div class="row"><div><span class="when">Sep 2025 to Jan 2026</span><h3>Introduction to Accounting</h3><p class="meta">Universitas Bina Nusantara</p><ul>
+<li>Taught and mentored students on MYOB and Odoo ERP, from recording transactions to preparing financial statements and connecting systems through ERP integration</li>
+<li>Supported lab projects that digitized SME financial reports in West Jakarta</li></ul></div>
+<div class="fr"><figure class="photo"><img src="files/aslab-accounting-finance.jpg" alt="Lab session for Introduction to Accounting" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/aslab-accounting-finance.jpg</small></figcaption></figure></div></div>
+
+<div class="row"><div><span class="when">Feb to Jun 2026</span><h3>Method and Practice of Computerized Audit</h3><p class="meta">Universitas Bina Nusantara</p><ul>
+<li>Taught students to use ACL audit software for hands-on computerized audit practice</li></ul></div>
+<div class="fr"><figure class="photo"><img src="files/aslab-audit-acl.jpg" alt="Lab session for Computerized Audit" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/aslab-audit-acl.jpg</small></figcaption></figure></div></div>
+
+<div class="row"><div><span class="when">Feb to Jun 2026</span><h3>Advanced Tax</h3><p class="meta">Universitas Bina Nusantara</p><ul>
+<li>Tutored students through advanced taxation material and helped them work through difficult topics</li></ul></div>
+<div class="fr"><figure class="photo"><img src="files/tutor-advanced-tax.jpg" alt="Tutoring session for Advanced Tax" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/tutor-advanced-tax.jpg</small></figcaption></figure></div></div>
+
+</div></section>
+
+<!-- ============ ORGANIZATIONS ============ -->
+<section class="sec ice" id="organizations"><div class="w">
+<div class="head"><h2>Organizations</h2><p>Finance, fundraising, events and sponsorship work with student teams.</p></div>
+
+<article class="row org">
+<div><span class="when">Apr to Jun 2025</span><h3>Treasurer</h3><p class="meta">TFI Waste to Wonder (WTW)</p>
+<ul><li>Handled the finances for a workshop that teaches people to turn household organic waste into ecoenzyme</li><li>Prepared the budget, recorded every income and expense, and wrote the final financial report</li><li>Worked with the preparation team so tools and materials were planned against what we could spend</li></ul></div>
+<div class="dump">
+<figure class="pol"><div class="photo"><img src="files/org-wtw-1.jpg" alt="TFI Waste to Wonder" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-wtw-1.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-wtw-2.jpg" alt="TFI Waste to Wonder" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-wtw-2.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-wtw-3.jpg" alt="TFI Waste to Wonder" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-wtw-3.jpg</small></div></div></figure>
+</div></article>
+
+<article class="row org">
+<div><span class="when">Mar to Jun 2025</span><h3>Fundraising Division Coordinator</h3><p class="meta">TFI RULES (Ruang Les)</p>
+<ul><li>Coordinated fundraising for educational activities at Panti Asuhan Ibnu Sabil</li><li>Managed the pre-order sales, making sure each order matched what the buyer asked for</li></ul></div>
+<div class="dump">
+<figure class="pol"><div class="photo"><img src="files/org-rules-1.jpg" alt="TFI RULES" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-rules-1.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-rules-2.jpg" alt="TFI RULES" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-rules-2.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-rules-3.jpg" alt="TFI RULES" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-rules-3.jpg</small></div></div></figure>
+</div></article>
+
+<article class="row org">
+<div><span class="when">Feb to May 2026</span><h3>Committee</h3><p class="meta">BNFC StockQuest 2026</p>
+<ul><li>Registration staff: handled participant sign-up and check-in</li><li>Banker in the StockLab Competition, supporting the simulated trading round</li><li>Liaison officer for the Trading and Equity Research teams, keeping participants informed and on schedule</li></ul></div>
+<div class="dump">
+<figure class="pol"><div class="photo"><img src="files/org-stockquest-1.jpg" alt="BNFC StockQuest 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-stockquest-1.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-stockquest-2.jpg" alt="BNFC StockQuest 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-stockquest-2.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-stockquest-3.jpg" alt="BNFC StockQuest 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-stockquest-3.jpg</small></div></div></figure>
+</div></article>
+
+<article class="row org">
+<div><span class="when">Aug to Nov 2026</span><h3>Vice Head of Event</h3><p class="meta">BNFC Benchmarking</p>
+<ul><li>Supported the head of event in planning and running BNFC Benchmarking</li><li>Coordinated the event team through the build-up to the event day</li></ul></div>
+<div class="dump">
+<figure class="pol"><div class="photo"><img src="files/org-benchmarking-1.jpg" alt="BNFC Benchmarking" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-benchmarking-1.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-benchmarking-2.jpg" alt="BNFC Benchmarking" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-benchmarking-2.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-benchmarking-3.jpg" alt="BNFC Benchmarking" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-benchmarking-3.jpg</small></div></div></figure>
+</div></article>
+
+<article class="row org">
+<div><span class="when">Sep to Nov 2026</span><h3>Staff of Sponsorship</h3><p class="meta">BNFC Finsight</p>
+<ul><li>Worked on sponsor outreach and partnership proposals to help fund BNFC Finsight</li></ul></div>
+<div class="dump">
+<figure class="pol"><div class="photo"><img src="files/org-finsight-1.jpg" alt="BNFC Finsight" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-finsight-1.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-finsight-2.jpg" alt="BNFC Finsight" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-finsight-2.jpg</small></div></div></figure>
+<figure class="pol"><div class="photo"><img src="files/org-finsight-3.jpg" alt="BNFC Finsight" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><div class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Add photo<small>files/org-finsight-3.jpg</small></div></div></figure>
+</div></article>
+
+</div></section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="sec" id="credentials"><div class="w">
+<div class="head"><h2>Certificates and credentials</h2></div>
+<div class="cr">
+<h3>Competition certificates</h3>
+<a href="files/ffic-certificate.pdf" target="_blank" data-view data-title="Finance For Indonesia Competition 2026 · Certificate"><div><b>Finance For Indonesia Competition 2026</b><span>Finance For Indonesia</span></div><i>View</i></a>
+<a href="files/iibc-certificate.pdf" target="_blank" data-view data-title="International Investment Banking Competition 2026 · Certificate"><div><b>International Investment Banking Competition 2026</b><span>Universitas Prasetiya Mulya</span></div><i>View</i></a>
+<a href="files/uph-certificate.pdf" target="_blank" data-view data-title="Stock Valuation Competition 2026 · Certificate"><div><b>Stock Valuation Competition 2026</b><span>Universitas Pelita Harapan</span></div><i>View</i></a>
+<a href="files/nbpc-certificate.pdf" target="_blank" data-view data-title="National Business Plan Competition 2025 · Certificate"><div><b>National Business Plan Competition, Marketing Days 2025</b><span>Trisakti School of Management</span></div><i>View</i></a>
+<a href="files/bnat-certificate.pdf" target="_blank" data-view data-title="Accounting Case Competition BNAT XIV · Certificate"><div><b>Accounting Case Competition BNAT XIV</b><span>HIMA Universitas Bina Nusantara</span></div><i>View</i></a>
+<h3>Credentials</h3>
+<a href="files/ielts-certificate.pdf" target="_blank" data-view data-title="IELTS · Certificate"><div><b>IELTS</b><span>English proficiency, overall score 7.5</span></div><i>View</i></a>
+<a href="files/transcript.pdf" target="_blank" data-view data-title="Academic Transcript"><div><b>Academic transcript</b><span>Universitas Bina Nusantara</span></div><i>View</i></a>
+</div>
+</div></section>
+
+<footer>
+<div class="stripes" aria-hidden="true"></div><div class="ring" aria-hidden="true"></div>
+<div class="w">
+<h2>Thank<br>you.</h2>
+<p class="o">Open to internships, case teams, and conversations about finance.</p>
+<div class="btns"><a class="btn g" href="mailto:gloria.kusuma@binus.ac.id">Email</a><a class="btn" href="https://www.linkedin.com/in/gloria-kusuma-b76492326/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="files/cv.pdf" target="_blank">Download CV</a></div>
+<small>© 2026 Gloria Christophera Kusuma</small>
+</div>
+</footer>
+
+<!-- PDF viewer (links still open in a new tab on phones and with ctrl/cmd-click) -->
+<div id="modal" role="dialog" aria-modal="true" aria-label="Document viewer"><div class="t"><b id="mt"></b><span><a id="mo" target="_blank">Open in new tab</a> &nbsp; <button onclick="closeM()">Close</button></span></div><iframe id="mf" title="Document"></iframe></div>
 <script>
 function closeM(){document.getElementById("modal").classList.remove("on");document.getElementById("mf").src=""}
 document.addEventListener("click",function(e){var a=e.target.closest("a[data-view]");if(!a||e.ctrlKey||e.metaKey||innerWidth<820)return;e.preventDefault();var f=a.getAttribute("href");document.getElementById("mt").textContent=a.dataset.title||"";document.getElementById("mf").src=f;document.getElementById("mo").href=f;document.getElementById("modal").classList.add("on")});
 addEventListener("keydown",function(e){if(e.key=="Escape")closeM()});
-</script></body></html>
+</script>
+</body></html>
