@@ -54,7 +54,7 @@ a{color:inherit}
 
 /* ---------- photo slots ---------- */
 .photo{position:relative;overflow:hidden;display:block;background:var(--ice);border:1px dashed #9db6ee;margin:0}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter:grayscale(1) contrast(1.04);transition:filter .5s}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter: contrast(1.04);transition:filter .5s}
 .photo:hover img{filter:none}
 .slot{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:12px;letter-spacing:.08em;color:var(--mut);padding:10px}
 .slot svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.4}
@@ -257,7 +257,6 @@ body{overflow-x:clip}
   Organizations use files/org-NAME-1.jpg to -3.jpg. Lab assistant rows use files/aslab-*.jpg and tutor-*.jpg.
   When finished, change <body> to <body class="clean"> to hide every slot you left empty.
 -->
-<body>-->
 <body>
 
 <div class="bar"><div class="w"><b>Gloria Kusuma</b><nav aria-label="Main"><a href="#competitions">Competitions</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#lab">Lab assistant</a><a href="#organizations">Organizations</a><a href="#certificates">Certificates</a></nav></div></div>
