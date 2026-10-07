@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Gloria Christophera Kusuma — Portfolio</title>
 <meta name="description" content="Finance student at Universitas Bina Nusantara. Equity research, valuation and investment banking case work, lab assistant, and student organization experience.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%230b1f4d%22/><text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23c8ad72%22 font-family=%22serif%22>G</text></svg>">
@@ -54,8 +54,8 @@ a{color:inherit}
 
 /* ---------- photo slots ---------- */
 .photo{position:relative;overflow:hidden;display:block;background:var(--ice);border:1px dashed #9db6ee;margin:0}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2; contrast(1.04);transition:filter .5s}
-.photo:hover
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter:grayscale(1) contrast(1.04);transition:filter .5s}
+.photo:hover img{filter:none}
 .slot{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:12px;letter-spacing:.08em;color:var(--mut);padding:10px}
 .slot svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.4}
 .slot small{font-size:10.5px;letter-spacing:.04em;opacity:.8;word-break:break-all}
@@ -87,17 +87,38 @@ a{color:inherit}
 .work{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:56px 0;border-top:1px solid rgba(200,173,114,.4);align-items:start}
 .work:last-child{padding-bottom:0}
 .work .photo{aspect-ratio:var(--ar,4/3)}
+.work>.photo{box-shadow:0 0 0 9px #fff,0 0 0 10px var(--gold),0 24px 44px rgba(0,0,0,.35)}
 .work:nth-of-type(even){grid-template-columns:7fr 5fr}
 .work:nth-of-type(even) .photo{order:2}
 .work .res{color:var(--gold)}
 .work h3{font-size:clamp(26px,2.8vw,36px);margin-top:12px;letter-spacing:-.025em}
 .work .host{margin-top:10px;font-size:14px;color:#a9c3f5}
 .work .desc{margin-top:20px;color:#d6e0f8;max-width:600px}
+.dark .ring{width:300px;height:300px;right:-120px;top:-110px;opacity:.5}
 .act{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.bt{font:700 11px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 22px;background:var(--gold);color:var(--ink);border:1px solid var(--gold);transition:transform .2s}
+.bt{font:700 11px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:0 22px;min-height:44px;display:inline-flex;align-items:center;background:var(--gold);color:var(--ink);border:1px solid var(--gold);transition:transform .2s}
 .bt.o{background:none;color:#fff;border-color:rgba(255,255,255,.55)}
 .bt:hover{transform:translateY(-2px)}
-.dark .ring{width:300px;height:300px;right:-120px;top:-110px;opacity:.5}
+.btn{min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- projects ---------- */
+.proj{--h:190px;display:grid;grid-template-columns:5fr 7fr;column-gap:56px;row-gap:30px;padding:56px 0;border-top:1px solid var(--ln);align-items:start}
+.proj:first-of-type{padding-top:0;border-top:0}
+.proj:last-child{padding-bottom:0}
+.proj .tag{color:var(--cob)}
+.proj h3{font-size:clamp(26px,2.8vw,36px);margin-top:12px;letter-spacing:-.025em}
+.proj .host{margin-top:10px;font-size:14px;color:var(--mut)}
+.proj .desc{color:#34415f}
+.proj .act{margin-top:20px}
+.proj .bt{background:var(--navy);border-color:var(--navy);color:#fff}
+.proj .bt.o{background:none;color:var(--navy);border-color:var(--navy)}
+.rail{grid-column:1/-1;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x proximity;padding:6px;margin:0 -6px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.tile{flex:none;width:calc(var(--h)*var(--r));display:block;text-decoration:none;scroll-snap-align:start;transition:transform .25s}
+.tile .photo{height:var(--h);box-shadow:0 10px 24px rgba(6,18,43,.14)}
+.tile .photo img{filter:none}
+.tile span{display:block;margin-top:9px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--mut)}
+.tile:hover{transform:translateY(-3px)}
+.tile:hover .photo{border-color:var(--gold)}
 
 /* ---------- skills ---------- */
 .skills{display:grid;grid-template-columns:1fr 1fr;column-gap:72px}
@@ -144,14 +165,14 @@ li:before{content:"";position:absolute;left:0;top:17px;width:14px;height:2px;bac
 .pol:hover{transform:rotate(0) scale(1.05);z-index:10}
 
 /* ---------- credentials ---------- */
-.cr h3{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cob);margin:48px 0 14px;font-weight:700}
-.cr h3:first-child{margin-top:0}
-.cr a{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--ln);text-decoration:none;transition:padding .25s,color .25s}
+.cr a,.cr .soon{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--ln);text-decoration:none;transition:padding .25s,color .25s}
 .cr a:hover{padding-left:14px;color:var(--cob)}
-.cr a:last-child{border-bottom:1px solid var(--ln)}
+.cr>:last-child{border-bottom:1px solid var(--ln)}
 .cr b{font-size:19px;letter-spacing:-.015em;font-weight:800;line-height:1.25;display:block}
 .cr span{font-size:14px;color:var(--mut);display:block;margin-top:2px}
 .cr i{font-style:normal;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--cob);white-space:nowrap}
+.cr .soon{opacity:.6}
+.clean .soon{display:none}
 
 /* ---------- footer ---------- */
 footer{background:linear-gradient(170deg,#06122b,#0b1f4d 75%);color:#fff;padding:104px 0 40px;position:relative;overflow:hidden}
@@ -170,31 +191,76 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 #modal a{color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
 #modal button{font:700 12px 'Archivo',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:9px 18px;border:1px solid rgba(255,255,255,.5);background:none;color:#fff;cursor:pointer}
 
+@media(hover:none){.photo img{filter:none}}
+body{overflow-x:clip}
+.bar{padding-top:env(safe-area-inset-top,0px)}
+.bar nav{scrollbar-width:none}
+.bar nav::-webkit-scrollbar{display:none}
+.bar nav a{display:flex;align-items:center;height:54px}
 @media(max-width:900px){
-  .hero .w,.about .w,.work,.row,.skills{grid-template-columns:1fr}
+  .hero .w,.about .w,.work,.row,.skills,.proj{grid-template-columns:1fr}
+  .work,.work:nth-of-type(even){grid-template-columns:1fr}
+  .work:nth-of-type(even) .photo{order:0}
+  .work{gap:28px}
   .hero .w{gap:56px;padding-top:56px;padding-bottom:72px}
   .pic{width:180px;justify-self:start;margin-left:30px}
   .about .w{gap:40px;padding-top:72px;padding-bottom:72px}
-  .work,.row{gap:28px}
-  .work:nth-of-type(even){grid-template-columns:1fr}
-  .work:nth-of-type(even) .photo{order:0}
+  .row,.row.org{gap:28px;grid-template-columns:1fr}
+  .ongoing{grid-template-columns:1fr;gap:40px}
+  .ongoing .org,.ongoing .org+.org{padding:0;border-left:0}
+  .ongoing .org+.org{padding-top:40px;border-top:1px solid var(--ln)}
   .skills .sk:nth-last-child(-n+2){border-bottom:0}
   .skills .sk:last-child{border-bottom:1px solid var(--ln)}
   .fr{max-width:480px}
   .bar b{display:none}
+  .bar nav{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:24px}
   .sec{padding:76px 0}
+  .proj{--h:160px;padding:44px 0;row-gap:22px}
+}
+@media(max-width:600px){
+  .w{padding:0 20px}
+  .bar .w{gap:0}
+  .bar nav{gap:22px}
+  .hero h1{font-size:clamp(46px,17vw,80px)}
+  .hero .role{font-size:24px}
+  .hero .w{padding-top:44px;gap:48px}
+  .pic{width:150px;margin-left:24px}
+  .btns{margin-top:28px}
+  .btn{flex:1 1 auto;justify-content:center}
+  .sec{padding:60px 0}
+  .head{margin-bottom:36px}
+  .head h2{font-size:clamp(34px,10.5vw,48px)}
+  .head p{font-size:16px}
+  .proj{--h:132px}
+  .rail{margin:0 -20px;padding:6px 20px 14px;scroll-padding-left:20px;gap:12px}
+  .act .bt{flex:1 1 auto;justify-content:center}
+  .work{padding:40px 0}
+  .work>.photo{box-shadow:0 0 0 6px #fff,0 0 0 7px var(--gold),0 16px 30px rgba(0,0,0,.35);margin:7px}
+  .cr a,.cr .soon{gap:14px}
+  .fr{margin-right:14px}
+  .fr:before{inset:14px -14px -14px 14px}
+  .fr .photo{box-shadow:0 0 0 6px #fff,0 0 0 7px rgba(6,18,43,.15),0 12px 24px rgba(6,18,43,.16)}
+  .row,.ongoing{padding:40px 0}
+  .dump{margin:0 6px 14px}
+  .sk .use span{white-space:normal}
+  footer{padding:72px 0 calc(32px + env(safe-area-inset-bottom,0px))}
+  footer h2{font-size:clamp(52px,19vw,80px)}
+  #modal{padding:12px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style></head>
 <!--
-  PHOTO SPACES
-  Every dashed box is a photo slot. Put the file named in the box into your "files" folder and it fills in automatically.
-  When you're done, change <body> to <body class="clean"> to hide any slot you left empty.
-  Want more photos on an entry? Copy one <figure class="photo">...</figure> block and rename its file.
+  IMAGE SPACES (all go in your "files" folder; empty ones show a dashed box)
+  Competitions: comp-NAME.jpg (team photo), NAME = ffic, uph, iibc, nbpc, bnat. Certificates are PDFs: files/NAME-certificate.pdf
+  Projects: proj-NAME-deck-1.jpg, -2, -3 (slides from the pitch deck), proj-NAME-report.jpg (report cover), proj-ffic-model.jpg (Excel model screenshot)
+  Certificates section: PDFs only (files/ielts-certificate.pdf, files/transcript.pdf). Copy an <a> row to add more and delete the "soon" row when done.
+  Organizations use files/org-NAME-1.jpg to -3.jpg. Lab assistant rows use files/aslab-*.jpg and tutor-*.jpg.
+  When finished, change <body> to <body class="clean"> to hide every slot you left empty.
 -->
+<body>-->
 <body>
 
-<div class="bar"><div class="w"><b>Gloria Kusuma</b><nav aria-label="Main"><a href="#competitions">Competitions</a><a href="#skills">Skills</a><a href="#lab">Lab assistant</a><a href="#organizations">Organizations</a><a href="#credentials">Credentials</a></nav></div></div>
+<div class="bar"><div class="w"><b>Gloria Kusuma</b><nav aria-label="Main"><a href="#competitions">Competitions</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#lab">Lab assistant</a><a href="#organizations">Organizations</a><a href="#certificates">Certificates</a></nav></div></div>
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="overview">
@@ -226,7 +292,7 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <section class="sec dark" id="competitions">
 <div class="ring" aria-hidden="true"></div>
 <div class="w">
-<div class="head"><h2>Competitions</h2><p>Case work in equity research, valuation, investment banking, business planning and accounting, with the pitch deck and report behind each one.</p></div>
+<div class="head"><h2>Competitions</h2><p>Case work in equity research, valuation, investment banking, business planning and accounting. The pitch decks, reports and models are in Projects.</p></div>
 
 <article class="work">
 <figure class="photo" style="--ar:4/3"><img src="files/comp-ffic.jpg" alt="Team at the Finance For Indonesia Competition 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-ffic.jpg</small></figcaption></figure>
@@ -235,18 +301,18 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <h3>Finance For Indonesia Competition 2026</h3>
 <p class="host">Finance For Indonesia (FFI), September 2026</p>
 <p class="desc">The case centred on TOWR's proposed acquisition of a 51% stake in WIFI. I wrote the company profile, strategic fit, synergy and risk sections of the pitch: who the two companies are, why the combination makes strategic sense, where the value comes from, and what could go wrong. The team's Excel model supports the numbers behind it.</p>
-<div class="act"><a class="bt" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="FFIC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="https://docs.google.com/spreadsheets/d/1j4DeGrZ1aaCgOqZMx3UXAjXlhnsGX9xV/edit?usp=sharing&ouid=107128840551177674089&rtpof=true&sd=true" target="_blank" rel="noopener">Excel model</a></div>
+<div class="act"><a class="bt" href="files/ffic-certificate.pdf" target="_blank" data-view data-title="Finance For Indonesia Competition 2026 · Certificate">Certificate</a></div>
 </div>
 </article>
 
 <article class="work">
-<figure class="photo" style="--ar:1/1"><img src="files/comp-uph.jpg" alt="Team Investment Network at the UPH Stock Valuation Competition" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-uph.jpg</small></figcaption></figure>
+<figure class="photo" style="--ar:1/1"><img src="files/comp-uph.jpg" alt="Team at the Stock Valuation Competition 2026" loading="lazy" onerror="this.closest('figure').classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Team photo<small>files/comp-uph.jpg</small></figcaption></figure>
 <div>
 <p class="lab res">3rd place</p>
 <h3>Stock Valuation Competition 2026</h3>
 <p class="host">Universitas Pelita Harapan, June 2026, with Team Investment Network</p>
 <p class="desc">Our team built and pitched a valuation of a listed company. I handled the company profile and the macro analysis: how the business makes its money, and how the wider economy shapes its outlook and the assumptions behind our valuation.</p>
-<div class="act"><a class="bt" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/uph-report.pdf" target="_blank" data-view data-title="UPH Stock Valuation 2026 · Report">Report</a></div>
+<div class="act"><a class="bt" href="files/uph-certificate.pdf" target="_blank" data-view data-title="Stock Valuation Competition 2026 · Certificate">Certificate</a></div>
 </div>
 </article>
 
@@ -257,7 +323,7 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <h3>International Investment Banking Competition 2026</h3>
 <p class="host">Universitas Prasetiya Mulya, April 2026</p>
 <p class="desc">An investment banking case built around a proposed transaction. I worked on the three pieces that decide whether a deal makes sense: what the target is worth, how the transaction is structured, and which synergies justify the price.</p>
-<div class="act"><a class="bt" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="IIBC 2026 · Pitch deck">Pitch deck</a><a class="bt o" href="files/iibc-report.pdf" target="_blank" data-view data-title="IIBC 2026 · Report">Report</a></div>
+<div class="act"><a class="bt" href="files/iibc-certificate.pdf" target="_blank" data-view data-title="International Investment Banking Competition 2026 · Certificate">Certificate</a></div>
 </div>
 </article>
 
@@ -268,7 +334,7 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <h3>National Business Plan Competition, Marketing Days 2025</h3>
 <p class="host">Trisakti School of Management, September 2025</p>
 <p class="desc">A business plan competition on the marketing side of business. I analysed the risks facing the venture and built the financial projections, so that the plan's numbers and its risks told one consistent story.</p>
-<div class="act"><a class="bt" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="NBPC 2025 · Pitch deck">Pitch deck</a><a class="bt o" href="files/nbpc-report.pdf" target="_blank" data-view data-title="NBPC 2025 · Report">Report</a></div>
+<div class="act"><a class="bt" href="files/nbpc-certificate.pdf" target="_blank" data-view data-title="National Business Plan Competition, Marketing Days 2025 · Certificate">Certificate</a></div>
 </div>
 </article>
 
@@ -279,10 +345,40 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <h3>Accounting Case Competition BNAT XIV</h3>
 <p class="host">HIMA Universitas Bina Nusantara, October 2025</p>
 <p class="desc">An accounting case competition run by the student association at my own university. I led the team: dividing the work, keeping the analysis consistent across everyone's sections, and getting it ready for the final presentation.</p>
-<div class="act"><a class="bt" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="BNAT XIV · Pitch deck">Pitch deck</a><a class="bt o" href="files/bnat-report.pdf" target="_blank" data-view data-title="BNAT XIV · Report">Report</a></div>
+<div class="act"><a class="bt" href="files/bnat-certificate.pdf" target="_blank" data-view data-title="Accounting Case Competition BNAT XIV · Certificate">Certificate</a></div>
 </div>
 </article>
 
+</div></section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="sec" id="projects"><div class="w">
+<div class="head"><h2>Projects</h2><p>The research, pitch decks and models behind my competitions. Pages are previewed here; tap one to open the full file.</p></div>
+<article class="proj" id="proj-ffic">
+<div><p class="lab tag">Mergers and acquisitions · FFIC 2026</p><h3>TOWR's proposed 51% acquisition of WIFI</h3><p class="host">Finance For Indonesia Competition 2026 · Top 4 finalist</p></div>
+<div><p class="desc">The case centred on TOWR's proposed acquisition of a 51% stake in WIFI. I wrote the company profile, strategic fit, synergy and risk sections of the pitch: who the two companies are, why the combination makes strategic sense, where the value comes from, and what could go wrong. The team's Excel model supports the numbers behind it.</p><div class="act"><a class="bt" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="TOWR's proposed 51% acquisition of WIFI · Pitch deck">Pitch deck</a><a class="bt o" href="https://docs.google.com/spreadsheets/d/1j4DeGrZ1aaCgOqZMx3UXAjXlhnsGX9xV/edit?usp=sharing&ouid=107128840551177674089&rtpof=true&sd=true" target="_blank" rel="noopener">Excel model</a></div></div>
+<div class="rail" tabindex="0" aria-label="Preview pages"><a class="tile" data-h style="--r:1.778" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="TOWR's proposed 51% acquisition of WIFI · Pitch deck"><figure class="photo"><img src="files/proj-ffic-deck-1.jpg" alt="Pitch deck page 1, TOWR's proposed 51% acquisition of WIFI" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 1<small>files/proj-ffic-deck-1.jpg</small></figcaption></figure><span>Pitch deck · p.1</span></a><a class="tile" data-h style="--r:1.778" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="TOWR's proposed 51% acquisition of WIFI · Pitch deck"><figure class="photo"><img src="files/proj-ffic-deck-2.jpg" alt="Pitch deck page 2, TOWR's proposed 51% acquisition of WIFI" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 2<small>files/proj-ffic-deck-2.jpg</small></figcaption></figure><span>Pitch deck · p.2</span></a><a class="tile" data-h style="--r:1.778" href="files/ffic-pitch-deck.pdf" target="_blank" data-view data-title="TOWR's proposed 51% acquisition of WIFI · Pitch deck"><figure class="photo"><img src="files/proj-ffic-deck-3.jpg" alt="Pitch deck page 3, TOWR's proposed 51% acquisition of WIFI" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 3<small>files/proj-ffic-deck-3.jpg</small></figcaption></figure><span>Pitch deck · p.3</span></a><a class="tile" data-h style="--r:1.778" href="https://docs.google.com/spreadsheets/d/1j4DeGrZ1aaCgOqZMx3UXAjXlhnsGX9xV/edit?usp=sharing&ouid=107128840551177674089&rtpof=true&sd=true" target="_blank"><figure class="photo"><img src="files/proj-ffic-model.jpg" alt="Excel model" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Model screenshot<small>files/proj-ffic-model.jpg</small></figcaption></figure><span>Excel model</span></a></div>
+</article>
+<article class="proj" id="proj-uph">
+<div><p class="lab tag">Equity valuation · UPH 2026</p><h3>Valuing a listed company</h3><p class="host">Stock Valuation Competition 2026 · 3rd place · Team Investment Network</p></div>
+<div><p class="desc">Our team built and pitched a valuation of a listed company. I handled the company profile and the macro analysis: how the business makes its money, and how the wider economy shapes its outlook and the assumptions behind our valuation.</p><div class="act"><a class="bt" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="Valuing a listed company · Pitch deck">Pitch deck</a><a class="bt o" href="files/uph-report.pdf" target="_blank" data-view data-title="Valuing a listed company · Report">Report</a></div></div>
+<div class="rail" tabindex="0" aria-label="Preview pages"><a class="tile" data-h style="--r:1.778" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="Valuing a listed company · Pitch deck"><figure class="photo"><img src="files/proj-uph-deck-1.jpg" alt="Pitch deck page 1, Valuing a listed company" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 1<small>files/proj-uph-deck-1.jpg</small></figcaption></figure><span>Pitch deck · p.1</span></a><a class="tile" data-h style="--r:1.778" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="Valuing a listed company · Pitch deck"><figure class="photo"><img src="files/proj-uph-deck-2.jpg" alt="Pitch deck page 2, Valuing a listed company" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 2<small>files/proj-uph-deck-2.jpg</small></figcaption></figure><span>Pitch deck · p.2</span></a><a class="tile" data-h style="--r:1.778" href="files/uph-pitch-deck.pdf" target="_blank" data-view data-title="Valuing a listed company · Pitch deck"><figure class="photo"><img src="files/proj-uph-deck-3.jpg" alt="Pitch deck page 3, Valuing a listed company" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 3<small>files/proj-uph-deck-3.jpg</small></figcaption></figure><span>Pitch deck · p.3</span></a><a class="tile" data-h style="--r:0.707" href="files/uph-report.pdf" target="_blank" data-view data-title="Valuing a listed company · Report"><figure class="photo"><img src="files/proj-uph-report.jpg" alt="Report cover, Valuing a listed company" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Report cover<small>files/proj-uph-report.jpg</small></figcaption></figure><span>Report</span></a></div>
+</article>
+<article class="proj" id="proj-iibc">
+<div><p class="lab tag">Investment banking · IIBC 2026</p><h3>Valuation, deal structure and synergies</h3><p class="host">International Investment Banking Competition 2026 · Top 9 finalist</p></div>
+<div><p class="desc">An investment banking case built around a proposed transaction. I worked on the three pieces that decide whether a deal makes sense: what the target is worth, how the transaction is structured, and which synergies justify the price.</p><div class="act"><a class="bt" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Pitch deck">Pitch deck</a><a class="bt o" href="files/iibc-report.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Report">Report</a></div></div>
+<div class="rail" tabindex="0" aria-label="Preview pages"><a class="tile" data-h style="--r:1.778" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Pitch deck"><figure class="photo"><img src="files/proj-iibc-deck-1.jpg" alt="Pitch deck page 1, Valuation, deal structure and synergies" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 1<small>files/proj-iibc-deck-1.jpg</small></figcaption></figure><span>Pitch deck · p.1</span></a><a class="tile" data-h style="--r:1.778" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Pitch deck"><figure class="photo"><img src="files/proj-iibc-deck-2.jpg" alt="Pitch deck page 2, Valuation, deal structure and synergies" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 2<small>files/proj-iibc-deck-2.jpg</small></figcaption></figure><span>Pitch deck · p.2</span></a><a class="tile" data-h style="--r:1.778" href="files/iibc-pitch-deck.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Pitch deck"><figure class="photo"><img src="files/proj-iibc-deck-3.jpg" alt="Pitch deck page 3, Valuation, deal structure and synergies" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 3<small>files/proj-iibc-deck-3.jpg</small></figcaption></figure><span>Pitch deck · p.3</span></a><a class="tile" data-h style="--r:0.707" href="files/iibc-report.pdf" target="_blank" data-view data-title="Valuation, deal structure and synergies · Report"><figure class="photo"><img src="files/proj-iibc-report.jpg" alt="Report cover, Valuation, deal structure and synergies" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Report cover<small>files/proj-iibc-report.jpg</small></figcaption></figure><span>Report</span></a></div>
+</article>
+<article class="proj" id="proj-nbpc">
+<div><p class="lab tag">Business plan · NBPC 2025</p><h3>Risk analysis and financial projections</h3><p class="host">National Business Plan Competition, Marketing Days 2025 · 2nd place</p></div>
+<div><p class="desc">A business plan competition on the marketing side of business. I analysed the risks facing the venture and built the financial projections, so that the plan's numbers and its risks told one consistent story.</p><div class="act"><a class="bt" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Pitch deck">Pitch deck</a><a class="bt o" href="files/nbpc-report.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Report">Report</a></div></div>
+<div class="rail" tabindex="0" aria-label="Preview pages"><a class="tile" data-h style="--r:1.778" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Pitch deck"><figure class="photo"><img src="files/proj-nbpc-deck-1.jpg" alt="Pitch deck page 1, Risk analysis and financial projections" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 1<small>files/proj-nbpc-deck-1.jpg</small></figcaption></figure><span>Pitch deck · p.1</span></a><a class="tile" data-h style="--r:1.778" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Pitch deck"><figure class="photo"><img src="files/proj-nbpc-deck-2.jpg" alt="Pitch deck page 2, Risk analysis and financial projections" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 2<small>files/proj-nbpc-deck-2.jpg</small></figcaption></figure><span>Pitch deck · p.2</span></a><a class="tile" data-h style="--r:1.778" href="files/nbpc-pitch-deck.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Pitch deck"><figure class="photo"><img src="files/proj-nbpc-deck-3.jpg" alt="Pitch deck page 3, Risk analysis and financial projections" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 3<small>files/proj-nbpc-deck-3.jpg</small></figcaption></figure><span>Pitch deck · p.3</span></a><a class="tile" data-h style="--r:0.707" href="files/nbpc-report.pdf" target="_blank" data-view data-title="Risk analysis and financial projections · Report"><figure class="photo"><img src="files/proj-nbpc-report.jpg" alt="Report cover, Risk analysis and financial projections" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Report cover<small>files/proj-nbpc-report.jpg</small></figcaption></figure><span>Report</span></a></div>
+</article>
+<article class="proj" id="proj-bnat">
+<div><p class="lab tag">Accounting case · BNAT XIV</p><h3>Leading an accounting case team</h3><p class="host">Accounting Case Competition BNAT XIV · 3rd place</p></div>
+<div><p class="desc">An accounting case competition run by the student association at my own university. I led the team: dividing the work, keeping the analysis consistent across everyone's sections, and getting it ready for the final presentation.</p><div class="act"><a class="bt" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="Leading an accounting case team · Pitch deck">Pitch deck</a><a class="bt o" href="files/bnat-report.pdf" target="_blank" data-view data-title="Leading an accounting case team · Report">Report</a></div></div>
+<div class="rail" tabindex="0" aria-label="Preview pages"><a class="tile" data-h style="--r:1.778" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="Leading an accounting case team · Pitch deck"><figure class="photo"><img src="files/proj-bnat-deck-1.jpg" alt="Pitch deck page 1, Leading an accounting case team" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 1<small>files/proj-bnat-deck-1.jpg</small></figcaption></figure><span>Pitch deck · p.1</span></a><a class="tile" data-h style="--r:1.778" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="Leading an accounting case team · Pitch deck"><figure class="photo"><img src="files/proj-bnat-deck-2.jpg" alt="Pitch deck page 2, Leading an accounting case team" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 2<small>files/proj-bnat-deck-2.jpg</small></figcaption></figure><span>Pitch deck · p.2</span></a><a class="tile" data-h style="--r:1.778" href="files/bnat-pitch-deck.pdf" target="_blank" data-view data-title="Leading an accounting case team · Pitch deck"><figure class="photo"><img src="files/proj-bnat-deck-3.jpg" alt="Pitch deck page 3, Leading an accounting case team" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Slide 3<small>files/proj-bnat-deck-3.jpg</small></figcaption></figure><span>Pitch deck · p.3</span></a><a class="tile" data-h style="--r:0.707" href="files/bnat-report.pdf" target="_blank" data-view data-title="Leading an accounting case team · Report"><figure class="photo"><img src="files/proj-bnat-report.jpg" alt="Report cover, Leading an accounting case team" loading="lazy" onerror="var e=this.closest('[data-h]')||this.closest('figure');e.classList.add('empty');this.remove()"><figcaption class="slot"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Report cover<small>files/proj-bnat-report.jpg</small></figcaption></figure><span>Report</span></a></div>
+</article>
 </div></section>
 
 <!-- ============ SKILLS ============ -->
@@ -357,21 +453,16 @@ footer small{display:block;border-top:1px solid rgba(200,173,114,.4);padding-top
 <ul><li>Worked on sponsor outreach and partnership proposals to help fund BNFC Finsight</li></ul></div></article>
 </div>
 
+
 </div></section>
 
-<!-- ============ CREDENTIALS ============ -->
-<section class="sec" id="credentials"><div class="w">
-<div class="head"><h2>Certificates and credentials</h2></div>
+<!-- ============ CERTIFICATES ============ -->
+<section class="sec" id="certificates"><div class="w">
+<div class="head"><h2>Certificates</h2><p>Language and other certificates. Competition certificates are under each competition above.</p></div>
 <div class="cr">
-<h3>Competition certificates</h3>
-<a href="files/ffic-certificate.pdf" target="_blank" data-view data-title="Finance For Indonesia Competition 2026 · Certificate"><div><b>Finance For Indonesia Competition 2026</b><span>Finance For Indonesia</span></div><i>View</i></a>
-<a href="files/iibc-certificate.pdf" target="_blank" data-view data-title="International Investment Banking Competition 2026 · Certificate"><div><b>International Investment Banking Competition 2026</b><span>Universitas Prasetiya Mulya</span></div><i>View</i></a>
-<a href="files/uph-certificate.pdf" target="_blank" data-view data-title="Stock Valuation Competition 2026 · Certificate"><div><b>Stock Valuation Competition 2026</b><span>Universitas Pelita Harapan</span></div><i>View</i></a>
-<a href="files/nbpc-certificate.pdf" target="_blank" data-view data-title="National Business Plan Competition 2025 · Certificate"><div><b>National Business Plan Competition, Marketing Days 2025</b><span>Trisakti School of Management</span></div><i>View</i></a>
-<a href="files/bnat-certificate.pdf" target="_blank" data-view data-title="Accounting Case Competition BNAT XIV · Certificate"><div><b>Accounting Case Competition BNAT XIV</b><span>HIMA Universitas Bina Nusantara</span></div><i>View</i></a>
-<h3>Credentials</h3>
-<a href="files/ielts-certificate.pdf" target="_blank" data-view data-title="IELTS · Certificate"><div><b>IELTS</b><span>English proficiency, overall score 7.5</span></div><i>View</i></a>
-<a href="files/transcript.pdf" target="_blank" data-view data-title="Academic Transcript"><div><b>Academic transcript</b><span>Universitas Bina Nusantara</span></div><i>View</i></a>
+<a href="files/ielts-certificate.pdf" target="_blank" data-view data-title="IELTS"><div><b>IELTS</b><span>English proficiency, overall score 7.5</span></div><i>View</i></a>
+<a href="files/transcript.pdf" target="_blank" data-view data-title="Academic transcript"><div><b>Academic transcript</b><span>Universitas Bina Nusantara</span></div><i>View</i></a>
+<div class="soon"><div><b>More to come</b><span>New certificates will be added here</span></div></div>
 </div>
 </div></section>
 
